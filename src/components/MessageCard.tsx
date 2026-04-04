@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Copy, ExternalLink, FileText, Check } from 'lucide-react';
+import { Copy, ExternalLink, FileText, Check, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Message } from '../types';
 
 interface MessageCardProps {
@@ -13,6 +13,7 @@ export const MessageCard: React.FC<MessageCardProps> = ({ message }) => {
   const [copiedText, setCopiedText] = useState(false);
   const [copiedStandard, setCopiedStandard] = useState(false);
   const [copiedSlipnet, setCopiedSlipnet] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const standardConfigs = message.text.match(STANDARD_CONFIG_REGEX) || [];
   const slipnetConfigs = message.text.match(SLIPNET_CONFIG_REGEX) || [];
@@ -38,6 +39,9 @@ export const MessageCard: React.FC<MessageCardProps> = ({ message }) => {
       setTimeout(() => setCopiedSlipnet(false), 2000);
     }
   };
+
+  const nextImage = () => setCurrentImageIndex((prev) => (prev + 1) % message.images.length);
+  const prevImage = () => setCurrentImageIndex((prev) => (prev - 1 + message.images.length) % message.images.length);
 
   const renderTextWithHighlights = (text: string) => {
     const parts = text.split(/(https?:\/\/[^\s]+|(?:vless|vmess|trojan|ss|ssr|tuic|hy2|wireguard|slipnet-enc|slipnet):\/\/[^\s]+|@[a-zA-Z0-9_]+|#[^\s]+)/gi);
@@ -122,17 +126,41 @@ export const MessageCard: React.FC<MessageCardProps> = ({ message }) => {
         )}
 
         {message.images && message.images.length > 0 && (
-          <div className="grid grid-cols-2 gap-2 mb-5">
-            {message.images.map((img, idx) => (
-              <div key={idx} className="relative aspect-square rounded-xl overflow-hidden bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700">
-                <img
-                  src={img}
-                  alt={`Attachment ${idx + 1}`}
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-              </div>
-            ))}
+          <div className="relative rounded-xl overflow-hidden bg-zinc-100 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700/50 mb-5 group flex justify-center items-center h-64 sm:h-80">
+            <img
+              src={message.images[currentImageIndex]}
+              alt={`Attachment ${currentImageIndex + 1}`}
+              className="max-w-full max-h-full object-contain"
+              loading="lazy"
+            />
+            {message.images.length > 1 && (
+              <>
+                <button
+                  onClick={(e) => { e.preventDefault(); prevImage(); }}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 bg-black/50 text-white rounded-full opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity hover:bg-black/70"
+                  dir="ltr"
+                >
+                  <ChevronRight size={20} />
+                </button>
+                <button
+                  onClick={(e) => { e.preventDefault(); nextImage(); }}
+                  className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 bg-black/50 text-white rounded-full opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity hover:bg-black/70"
+                  dir="ltr"
+                >
+                  <ChevronLeft size={20} />
+                </button>
+                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 bg-black/40 px-2 py-1 rounded-full" dir="ltr">
+                  {message.images.map((_, idx) => (
+                    <div
+                      key={idx}
+                      className={`w-1.5 h-1.5 rounded-full transition-colors ${
+                        idx === currentImageIndex ? 'bg-white' : 'bg-white/40'
+                      }`}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
           </div>
         )}
 
