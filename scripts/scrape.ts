@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 
 const CHANNELS = [
   'persianvpnhub',
-  'mitivpn',
+  'SparrK_VPN',
   'Break_the_barriers',
   'MatinSenPaii',
   'worldsmoments',
