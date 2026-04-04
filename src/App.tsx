@@ -148,27 +148,29 @@ export default function App() {
                 <button
                   onClick={handleCopyAllStandardConfigs}
                   disabled={totalStandardConfigs === 0}
-                  className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-2.5 bg-blue-600 hover:bg-blue-700 disabled:bg-zinc-300 disabled:dark:bg-zinc-800 disabled:text-zinc-500 text-white text-sm font-medium rounded-xl transition-colors shadow-sm"
+                  className="flex-1 sm:flex-none flex items-center justify-center gap-1.5 px-3 py-2 sm:px-4 sm:py-2.5 bg-blue-600 hover:bg-blue-700 disabled:bg-zinc-300 disabled:dark:bg-zinc-800 disabled:text-zinc-500 text-white text-xs sm:text-sm font-medium rounded-xl transition-colors shadow-sm"
                 >
-                  {copiedAllStandard ? <Check size={18} /> : <Copy size={18} />}
-                  {copiedAllStandard ? 'کپی شد' : `کپی همه کانفیگ‌ها (${totalStandardConfigs})`}
+                  {copiedAllStandard ? <Check size={16} className="sm:w-[18px] sm:h-[18px]" /> : <Copy size={16} className="sm:w-[18px] sm:h-[18px]" />}
+                  <span className="hidden sm:inline">{copiedAllStandard ? 'کپی شد' : `کپی همه کانفیگ‌ها (${totalStandardConfigs})`}</span>
+                  <span className="sm:hidden">{copiedAllStandard ? 'کپی شد' : `کانفیگ (${totalStandardConfigs})`}</span>
                 </button>
 
                 <button
                   onClick={handleCopyAllSlipnetConfigs}
                   disabled={totalSlipnetConfigs === 0}
-                  className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-2.5 bg-purple-600 hover:bg-purple-700 disabled:bg-zinc-300 disabled:dark:bg-zinc-800 disabled:text-zinc-500 text-white text-sm font-medium rounded-xl transition-colors shadow-sm"
+                  className="flex-1 sm:flex-none flex items-center justify-center gap-1.5 px-3 py-2 sm:px-4 sm:py-2.5 bg-purple-600 hover:bg-purple-700 disabled:bg-zinc-300 disabled:dark:bg-zinc-800 disabled:text-zinc-500 text-white text-xs sm:text-sm font-medium rounded-xl transition-colors shadow-sm"
                 >
-                  {copiedAllSlipnet ? <Check size={18} /> : <Copy size={18} />}
-                  {copiedAllSlipnet ? 'کپی شد' : `کپی همه اسلیپ‌نت‌ها (${totalSlipnetConfigs})`}
+                  {copiedAllSlipnet ? <Check size={16} className="sm:w-[18px] sm:h-[18px]" /> : <Copy size={16} className="sm:w-[18px] sm:h-[18px]" />}
+                  <span className="hidden sm:inline">{copiedAllSlipnet ? 'کپی شد' : `کپی همه اسلیپ‌نت‌ها (${totalSlipnetConfigs})`}</span>
+                  <span className="sm:hidden">{copiedAllSlipnet ? 'کپی شد' : `اسلیپ‌نت (${totalSlipnetConfigs})`}</span>
                 </button>
 
                 <button
                   onClick={fetchData}
-                  className="p-2.5 text-zinc-500 bg-zinc-100 dark:bg-zinc-800/50 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-xl transition-colors"
+                  className="p-2 sm:p-2.5 text-zinc-500 bg-zinc-100 dark:bg-zinc-800/50 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-xl transition-colors flex-shrink-0"
                   title="بروزرسانی"
                 >
-                  <RefreshCw size={20} className={loading ? 'animate-spin' : ''} />
+                  <RefreshCw size={18} className={`sm:w-[20px] sm:h-[20px] ${loading ? 'animate-spin' : ''}`} />
                 </button>
               </div>
             </div>
