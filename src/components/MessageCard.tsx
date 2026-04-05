@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Copy, ExternalLink, FileText, Check, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Message } from '../types';
+import { copyToClipboard } from '../utils';
 
 interface MessageCardProps {
   message: Message;
@@ -18,25 +19,31 @@ export const MessageCard: React.FC<MessageCardProps> = ({ message }) => {
   const standardConfigs = message.text.match(STANDARD_CONFIG_REGEX) || [];
   const slipnetConfigs = message.text.match(SLIPNET_CONFIG_REGEX) || [];
 
-  const handleCopyText = () => {
-    navigator.clipboard.writeText(message.text);
-    setCopiedText(true);
-    setTimeout(() => setCopiedText(false), 2000);
-  };
-
-  const handleCopyStandard = () => {
-    if (standardConfigs.length > 0) {
-      navigator.clipboard.writeText(standardConfigs.join('\n'));
-      setCopiedStandard(true);
-      setTimeout(() => setCopiedStandard(false), 2000);
+  const handleCopyText = async () => {
+    const success = await copyToClipboard(message.text);
+    if (success) {
+      setCopiedText(true);
+      setTimeout(() => setCopiedText(false), 2000);
     }
   };
 
-  const handleCopySlipnet = () => {
+  const handleCopyStandard = async () => {
+    if (standardConfigs.length > 0) {
+      const success = await copyToClipboard(standardConfigs.join('\n'));
+      if (success) {
+        setCopiedStandard(true);
+        setTimeout(() => setCopiedStandard(false), 2000);
+      }
+    }
+  };
+
+  const handleCopySlipnet = async () => {
     if (slipnetConfigs.length > 0) {
-      navigator.clipboard.writeText(slipnetConfigs.join('\n'));
-      setCopiedSlipnet(true);
-      setTimeout(() => setCopiedSlipnet(false), 2000);
+      const success = await copyToClipboard(slipnetConfigs.join('\n'));
+      if (success) {
+        setCopiedSlipnet(true);
+        setTimeout(() => setCopiedSlipnet(false), 2000);
+      }
     }
   };
 
