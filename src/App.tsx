@@ -7,6 +7,7 @@ import React, { useEffect, useState } from 'react';
 import { MessageCard } from './components/MessageCard';
 import { Search, Filter, RefreshCw, Copy, Check } from 'lucide-react';
 import { Message } from './types';
+import { copyToClipboard } from './utils';
 
 const STANDARD_CONFIG_REGEX = /(vless|vmess|trojan|ss|ssr|tuic|hy2|wireguard):\/\/[^\s]+/gi;
 const SLIPNET_CONFIG_REGEX = /(slipnet-enc|slipnet):\/\/[^\s]+/gi;
@@ -46,7 +47,8 @@ export default function App() {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`${import.meta.env.BASE_URL}data.json`);
+      // Add a timestamp query parameter to bypass browser caching
+      const response = await fetch(`${import.meta.env.BASE_URL}data.json?t=${new Date().getTime()}`);
       if (!response.ok) throw new Error('Failed to fetch data');
       const data: Message[] = await response.json();
       
@@ -66,7 +68,7 @@ export default function App() {
     }
   };
 
-  const handleCopyAllStandardConfigs = () => {
+  const handleCopyAllStandardConfigs = async () => {
     let allConfigs: string[] = [];
     filteredMessages.forEach(msg => {
       const configs = msg.text.match(STANDARD_CONFIG_REGEX);
@@ -76,13 +78,15 @@ export default function App() {
     });
 
     if (allConfigs.length > 0) {
-      navigator.clipboard.writeText(allConfigs.join('\n'));
-      setCopiedAllStandard(true);
-      setTimeout(() => setCopiedAllStandard(false), 2000);
+      const success = await copyToClipboard(allConfigs.join('\n'));
+      if (success) {
+        setCopiedAllStandard(true);
+        setTimeout(() => setCopiedAllStandard(false), 2000);
+      }
     }
   };
 
-  const handleCopyAllSlipnetConfigs = () => {
+  const handleCopyAllSlipnetConfigs = async () => {
     let allConfigs: string[] = [];
     filteredMessages.forEach(msg => {
       const configs = msg.text.match(SLIPNET_CONFIG_REGEX);
@@ -92,9 +96,11 @@ export default function App() {
     });
 
     if (allConfigs.length > 0) {
-      navigator.clipboard.writeText(allConfigs.join('\n'));
-      setCopiedAllSlipnet(true);
-      setTimeout(() => setCopiedAllSlipnet(false), 2000);
+      const success = await copyToClipboard(allConfigs.join('\n'));
+      if (success) {
+        setCopiedAllSlipnet(true);
+        setTimeout(() => setCopiedAllSlipnet(false), 2000);
+      }
     }
   };
 
