@@ -22,7 +22,6 @@ const CHANNELS = [
   'INTERNETFORIRAN',
   'VahidOnline',
   'pm_afshaa',
-  'irnotphone',
   'NetAccount'
 ];
 
