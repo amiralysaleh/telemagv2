@@ -5,7 +5,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { MessageCard } from './components/MessageCard';
-import { Search, Filter, RefreshCw, Copy, Check } from 'lucide-react';
+import { Search, Filter, RefreshCw, Copy, Check, Bell, X, Heart, Globe } from 'lucide-react';
 import { Message } from './types';
 import { copyToClipboard } from './utils';
 
@@ -21,10 +21,22 @@ export default function App() {
   const [channels, setChannels] = useState<string[]>([]);
   const [copiedAllStandard, setCopiedAllStandard] = useState(false);
   const [copiedAllSlipnet, setCopiedAllSlipnet] = useState(false);
+  const [showNotification, setShowNotification] = useState(false);
+  const [hasUnreadNotification, setHasUnreadNotification] = useState(true);
 
   useEffect(() => {
     fetchData();
+    const isRead = localStorage.getItem('notification_v1_read');
+    if (isRead) {
+      setHasUnreadNotification(false);
+    }
   }, []);
+
+  const handleOpenNotification = () => {
+    setShowNotification(true);
+    setHasUnreadNotification(false);
+    localStorage.setItem('notification_v1_read', 'true');
+  };
 
   useEffect(() => {
     let result = messages;
@@ -124,6 +136,16 @@ export default function App() {
                 <Filter size={20} />
               </div>
               <h1 className="text-xl font-bold tracking-tight" dir="ltr">Telegram Magazine</h1>
+              <button
+                onClick={handleOpenNotification}
+                className="relative p-2 text-zinc-500 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-xl transition-colors"
+                title="اطلاعیه‌ها"
+              >
+                <Bell size={22} />
+                {hasUnreadNotification && (
+                  <span className="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-red-500 border-2 border-white dark:border-zinc-900 rounded-full"></span>
+                )}
+              </button>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto items-center">
@@ -210,6 +232,48 @@ export default function App() {
           </>
         )}
       </main>
+
+      {showNotification && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm" onClick={() => setShowNotification(false)}>
+          <div className="bg-white dark:bg-zinc-900 rounded-2xl shadow-xl w-full max-w-md overflow-hidden border border-zinc-200 dark:border-zinc-800" onClick={e => e.stopPropagation()}>
+            <div className="flex items-center justify-between p-4 border-b border-zinc-100 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/50">
+              <h3 className="font-bold text-lg flex items-center gap-2 text-zinc-900 dark:text-zinc-100">
+                <Bell className="text-blue-500" size={20} />
+                اطلاعیه مهم
+              </h3>
+              <button onClick={() => setShowNotification(false)} className="p-1 text-zinc-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-500/10 rounded-lg transition-colors">
+                <X size={20} />
+              </button>
+            </div>
+            <div className="p-5 space-y-4 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+              <p>
+                <strong>سلام و درود همراهان عزیز 🌸</strong>
+              </p>
+              <p>
+                برای دسترسی پایدارتر، وب‌سایت هم‌اکنون روی دو دامنه مجزا (با دیتاسنترهای متفاوت) در دسترس است. پیشنهاد می‌کنیم از این صفحه <strong>اسکرین‌شات بگیرید</strong> تا در صورت بروز مشکل یا آپدیت نشدن یکی از لینک‌ها، از لینک جایگزین استفاده کنید:
+              </p>
+              <div className="bg-blue-50 dark:bg-blue-900/20 p-3 rounded-xl space-y-2 border border-blue-100 dark:border-blue-800/30" dir="ltr">
+                <a href="https://mag.runflare.run" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                  <Globe size={16} /> mag.runflare.run
+                </a>
+                <a href="https://mag2.runflare.run" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                  <Globe size={16} /> mag2.runflare.run
+                </a>
+              </div>
+              <p>
+                همچنین برای کمک به بقا و توسعه وب‌سایت، در صورت تمایل می‌توانید از ما حمایت مالی کنید. اگر کانال خاصی مد نظرتان است که در لیست نیست، در صفحه حمایت برای ما بنویسید تا اضافه شود.
+              </p>
+              <div className="pt-2">
+                <a href="https://daramet.com/amiraly" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 w-full py-2.5 bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-500/20 rounded-xl font-medium transition-colors border border-red-200 dark:border-red-500/20">
+                  <Heart size={18} className="fill-current" />
+                  حمایت مالی و ثبت درخواست
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
+
