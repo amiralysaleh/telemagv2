@@ -1,5 +1,384 @@
 [
   {
+    "id": "INTERNETFORIRAN/885",
+    "channel": "INTERNETFORIRAN",
+    "text": "✅ آموزش خیلی ساده MasterHttpRelayVPN 🔥  (بدون VPS، فقط با اکانت گوگل!)این ابزار ترافیک اینترنتتو کامل پشت گوگل قایم می‌کنه. فیلتر فقط google.com رو می‌بینه، ولی تو داری راحت همه سایت‌ها رو باز می‌کنی.  هیچ سرور یا VPS لازم نداره، فقط یه اکانت گوگل کافیه!---مرحله ۱: پروژه رو بگیر (۳۰ ثانیه)۱. برو این لینک:  https://github.com/masterking32/MasterHttpRelayVPN/tree/python_testing۲. روی Code کلیک کن → Download ZIP۳. فایل زیپ رو استخراج کن.۴. داخل پوشه پروژه، این دستور رو بزن:pip install -r requirements.txt(اگه ارور داد:)pip install -r requirements.txt -i https://mirror-pypi.runflare.com/simple/ --trusted-host mirror-pypi.runflare.com---مرحله ۲: رله گوگل رو بساز (مهم‌ترین قسمت)۱. برو سایت: https://script.google.com۲. New project بزن.۳. تمام کد پیش‌فرض رو پاک کن.۴. فایل Code.gs رو از پوشه پروژه باز کن، همه محتواش رو کپی کن و اینجا بچسبون.۵. این خط رو پیدا کن و یه رمز قوی بذار:const AUTH_KEY = \"رمز_دلخواه_تو_اینجا\";۶. بالا سمت راست Deploy → New deployment بزن.۷. نوعش رو Web app بذار.۸. تنظیمات:- Execute as: Me- Who has access: Anyone۹. Deploy بزن و Deployment ID رو کپی کن (بعداً لازم داریم).---مرحله ۳: فایل config.json رو تنظیم کن۱. داخل پوشه پروژه، فایل config.example.json رو کپی کن و اسمش رو بذار config.json۲. فایل رو باز کن و این مقادیر رو دقیق بذار:{  \"mode\": \"apps_script\",  \"google_ip\": \"216.239.38.120\",  \"front_domain\": \"www.google.com\",  \"script_id\": \"DEPLOYMENT_ID_که_کپی_کردی_اینجا\",  \"auth_key\": \"همون_رمزی_که_بالا_گذاشتی\",  \"listen_host\": \"127.0.0.1\",  \"listen_port\": 8085,  \"log_level\": \"INFO\",  \"verify_ssl\": true}---مرحله ۴: برنامه رو اجرا کنترمینال رو باز کن، داخل پوشه پروژه برو و بزن:python main.pyاگه درست باشه می‌نویسه:Proxy listening on 127.0.0.1:8085(برنامه رو نبند، باز نگه دار!)---مرحله ۵: مرورگر رو به پراکسی وصل کنپراکسی محلی:آدرس: 127.0.0.1  پورت: 8085  نوع: HTTP- فایرفاکس: Settings → Network Settings → Manual proxy- کروم/اج: از تنظیمات ویندوز یا FoxyProxy- موبایل: با اپ HTTP Proxy به پراکسی کامپیوتر وصل شو---مرحله ۶: گواهی امنیتی رو نصب کن (حتماً انجام بده!)بعد از اولین اجرا، فایل ca/ca.crt ساخته می‌شه.ویندوز:۱. روی فایل دوبار کلیک کن۲. Install Certificate → Current User۳. تیک Place all certificates in the following store رو بزن۴. Trusted Root Certification Authorities → OKفایرفاکس:Settings → Privacy & Security → Certificates → Import → فایل ca.crt → تیک Trust this CA---@archivetellتموم شد! 🎉  حالا تست کن، سایت‌های فیلترشده باید باز بشن.نکات طلایی:- برنامه رو همیشه باز نگه دار- اگه ارور دادی، اول auth_key و script_id رو چک کن- می‌تونی چند تا Deployment ID بسازی برای سرعت بیشتر- عوض کردن پورت: python main.py -p 9090لینک پروژه:  https://github.com/masterking32/MasterHttpRelayVPN(این آموزش برای برنچ python_testing هست)",
+    "html": "<b><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i> آموزش خیلی ساده MasterHttpRelayVPN <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')\"><b>🔥</b></i></b>&nbsp; <br>(بدون VPS، فقط با اکانت گوگل!)<br><br>این ابزار ترافیک اینترنتتو <b>کامل پشت گوگل</b> قایم می‌کنه. فیلتر فقط <code>google.com</code> رو می‌بینه، ولی تو داری راحت همه سایت‌ها رو باز می‌کنی.&nbsp; <br>هیچ سرور یا VPS لازم نداره، فقط یه اکانت گوگل کافیه!<br><br>---<br><br><b>مرحله ۱: پروژه رو بگیر (۳۰ ثانیه)</b><br><br>۱. برو این لینک:&nbsp; <br><a href=\"https://github.com/masterking32/MasterHttpRelayVPN/tree/python_testing\" target=\"_blank\" rel=\"noopener\">https://github.com/masterking32/MasterHttpRelayVPN/tree/python_testing</a><br><br>۲. روی <b>Code</b> کلیک کن → <b>Download ZIP</b><br><br>۳. فایل زیپ رو استخراج کن.<br><br>۴. داخل پوشه پروژه، این دستور رو بزن:<br><br><pre>pip install -r requirements.txt</pre><br>(اگه ارور داد:)<br><pre>pip install -r requirements.txt -i https://mirror-pypi.runflare.com/simple/ --trusted-host mirror-pypi.runflare.com</pre><br>---<br><br><b>مرحله ۲: رله گوگل رو بساز (مهم‌ترین قسمت)</b><br><br>۱. برو سایت: <a href=\"https://script.google.com/\" target=\"_blank\" rel=\"noopener\">https://script.google.com</a><br><br>۲. <b>New project</b> بزن.<br><br>۳. تمام کد پیش‌فرض رو پاک کن.<br><br>۴. فایل <code>Code.gs</code> رو از پوشه پروژه باز کن، <b>همه محتواش</b> رو کپی کن و اینجا بچسبون.<br><br>۵. این خط رو پیدا کن و یه رمز قوی بذار:<br><pre>const AUTH_KEY = \"رمز_دلخواه_تو_اینجا\";</pre><br>۶. بالا سمت راست <b>Deploy</b> → <b>New deployment</b> بزن.<br><br>۷. نوعش رو <b>Web app</b> بذار.<br><br>۸. تنظیمات:<br>- Execute as: <b>Me</b><br>- Who has access: <b>Anyone</b><br><br>۹. <b>Deploy</b> بزن و <b>Deployment ID</b> رو کپی کن (بعداً لازم داریم).<br><br>---<br><br><b>مرحله ۳: فایل config.json رو تنظیم کن</b><br><br>۱. داخل پوشه پروژه، فایل <code>config.example.json</code> رو کپی کن و اسمش رو بذار <code>config.json</code><br><br>۲. فایل رو باز کن و این مقادیر رو دقیق بذار:<br><br><pre>{<br>&nbsp; \"mode\": \"apps_script\",<br>&nbsp; \"google_ip\": \"216.239.38.120\",<br>&nbsp; \"front_domain\": \"www.google.com\",<br>&nbsp; \"script_id\": \"DEPLOYMENT_ID_که_کپی_کردی_اینجا\",<br>&nbsp; \"auth_key\": \"همون_رمزی_که_بالا_گذاشتی\",<br>&nbsp; \"listen_host\": \"127.0.0.1\",<br>&nbsp; \"listen_port\": 8085,<br>&nbsp; \"log_level\": \"INFO\",<br>&nbsp; \"verify_ssl\": true<br>}</pre><br>---<br><br><b>مرحله ۴: برنامه رو اجرا کن</b><br><br>ترمینال رو باز کن، داخل پوشه پروژه برو و بزن:<br><br><pre>python main.py</pre><br>اگه درست باشه می‌نویسه:<br><code>Proxy listening on 127.0.0.1:8085</code><br><br>(برنامه رو نبند، باز نگه دار!)<br><br>---<br><br><b>مرحله ۵: مرورگر رو به پراکسی وصل کن</b><br><br>پراکسی محلی:<br><b>آدرس:</b> <a href=\"http://127.0.0.1/\" target=\"_blank\" rel=\"noopener\">127.0.0.1</a>&nbsp; <br><b>پورت:</b> 8085&nbsp; <br><b>نوع:</b> HTTP<br><br>- فایرفاکس: Settings → Network Settings → Manual proxy<br>- کروم/اج: از تنظیمات ویندوز یا FoxyProxy<br>- موبایل: با اپ HTTP Proxy به پراکسی کامپیوتر وصل شو<br><br>---<br><br><b>مرحله ۶: گواهی امنیتی رو نصب کن (حتماً انجام بده!)</b><br><br>بعد از اولین اجرا، فایل <code>ca/ca.crt</code> ساخته می‌شه.<br><br><b>ویندوز:</b><br>۱. روی فایل دوبار کلیک کن<br>۲. Install Certificate → Current User<br>۳. تیک <b>Place all certificates in the following store</b> رو بزن<br>۴. Trusted Root Certification Authorities → OK<br><br><b>فایرفاکس:</b><br>Settings → Privacy &amp; Security → Certificates → Import → فایل ca.crt → تیک Trust this CA<br><br>---<br><a href=\"https://t.me/archivetell\" target=\"_blank\">@archivetell</a><br><b>تموم شد!</b> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')\"><b>🎉</b></i>&nbsp; <br>حالا تست کن، سایت‌های فیلترشده باید باز بشن.<br><br><b>نکات طلایی:</b><br>- برنامه رو همیشه باز نگه دار<br>- اگه ارور دادی، اول <code>auth_key</code> و <code>script_id</code> رو چک کن<br>- می‌تونی چند تا Deployment ID بسازی برای سرعت بیشتر<br>- عوض کردن پورت: <code>python main.py -p 9090</code><br><br><br><b>لینک پروژه:</b>&nbsp; <br><a href=\"https://github.com/masterking32/MasterHttpRelayVPN\" target=\"_blank\" rel=\"noopener\">https://github.com/masterking32/MasterHttpRelayVPN</a><br><br>(این آموزش برای برنچ python_testing هست)",
+    "date": "2026-04-21T10:59:46+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/INTERNETFORIRAN/885",
+    "timestamp": 1776769186000
+  },
+  {
+    "id": "MatinSenPaii/2784",
+    "channel": "MatinSenPaii",
+    "text": "مشت محکمی بر دهان شرکت‌های رانتی که دسترسی به یوتوب رو اشتراکی کردن:https://github.com/masterking32/MasterHttpRelayVPN/blob/python_testing/README_FA.mdوhttps://github.com/patterniha/MITM-DomainFrontingرو تست کنید. توضیحات کامل توی Readme هست",
+    "html": "مشت محکمی بر دهان شرکت‌های رانتی که دسترسی به یوتوب رو اشتراکی کردن:<br><br><a href=\"https://github.com/masterking32/MasterHttpRelayVPN/blob/python_testing/README_FA.md\" target=\"_blank\" rel=\"noopener\">https://github.com/masterking32/MasterHttpRelayVPN/blob/python_testing/README_FA.md</a><br>و<br><a href=\"https://github.com/patterniha/MITM-DomainFronting\" target=\"_blank\" rel=\"noopener\">https://github.com/patterniha/MITM-DomainFronting</a><br>رو تست کنید. توضیحات کامل توی Readme هست",
+    "date": "2026-04-21T10:59:42+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/MatinSenPaii/2784",
+    "timestamp": 1776769182000
+  },
+  {
+    "id": "INTERNETFORIRAN/884",
+    "channel": "INTERNETFORIRAN",
+    "text": "یکی از پروژه های فوق العاده که با استفاده از MITM و گرفتن درخواست http و relay کردن اون از طریق یک کد script گوگل امکان دسترسی به اینترنت رو فراهم کرد پروژه  https://github.com/masterking32/MasterHttpRelayVPN هست که دیروز همزمان با پروژه ی من منتشر شد. ///…سایت ها به صورت متنی و تیکه تیکه و داغون باز میشنبرای اینترنت من فقط در حد همین تلگرام جوابه",
+    "html": "یکی از پروژه های فوق العاده که با استفاده از MITM و گرفتن درخواست http و relay کردن اون از طریق یک کد script گوگل امکان دسترسی به اینترنت رو فراهم کرد پروژه  https://github.com/masterking32/MasterHttpRelayVPN هست که دیروز همزمان با پروژه ی من منتشر شد. ///…",
+    "date": "2026-04-21T10:58:30+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/INTERNETFORIRAN/884",
+    "timestamp": 1776769110000
+  },
+  {
+    "id": "newscenter/62139",
+    "channel": "newscenter",
+    "text": "سخنگوی وزارت امور خارجه قطر: طرفین مذاکره در مورد تاریخ انقضای آتش‌بس در منطقه می‌توانند دوباره مورد مشورت قرار گیرند🔴 سخنگوی وزارت خارجه قطر: «ما نمی‌خواهیم درباره شکست مذاکرات [میان آمریکا و ایران] صحبت کنیم.🔻تمام جهان از این مذاکرات حمایت می‌کند، از جمله ما. و ما از برادران خود در پاکستان حمایت می‌کنیم.»🔻 قطر در مورد مذاکرات اسلام‌آباد با همه طرف‌ها از جمله آمریکا در تماس است.🔻قطر میانجیگری را در صورتی نقشی مؤثر می‌داند که به طرف‌ها کمک کند تا گامی فراتر به سوی راه‌حلی سیاسی بردارند✅ @newscenter",
+    "html": "<b>سخنگوی وزارت امور خارجه قطر: طرفین مذاکره در مورد تاریخ انقضای آتش‌بس در منطقه می‌توانند دوباره مورد مشورت قرار گیرند</b><br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> سخنگوی وزارت خارجه قطر: «ما نمی‌خواهیم درباره شکست مذاکرات [میان آمریکا و ایران] صحبت کنیم.<br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')\"><b>🔻</b></i>تمام جهان از این مذاکرات حمایت می‌کند، از جمله ما. و ما از برادران خود در پاکستان حمایت می‌کنیم.»<br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')\"><b>🔻</b></i> قطر در مورد مذاکرات اسلام‌آباد با همه طرف‌ها از جمله آمریکا در تماس است.<br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')\"><b>🔻</b></i>قطر میانجیگری را در صورتی نقشی مؤثر می‌داند که به طرف‌ها کمک کند تا گامی فراتر به سوی راه‌حلی سیاسی بردارند<br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
+    "date": "2026-04-21T10:57:24+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/newscenter/62139",
+    "timestamp": 1776769044000
+  },
+  {
+    "id": "pm_afshaa/89354",
+    "channel": "pm_afshaa",
+    "text": "🔴رویترز: کشور‌های عرب خلیج فارس نگرانند که نتیجه مذاکرات، تثبیت تسلط تهران بر تنگه هرمز باشد💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
+    "html": "<tg-emoji emoji-id=\"6044112265102235520\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i></tg-emoji>رویترز: کشور‌های عرب خلیج فارس نگرانند که نتیجه مذاکرات، تثبیت تسلط تهران بر تنگه هرمز باشد<br><br><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
+    "date": "2026-04-21T10:56:01+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/pm_afshaa/89354",
+    "timestamp": 1776768961000
+  },
+  {
+    "id": "worldsmoments/93523",
+    "channel": "worldsmoments",
+    "text": "بچه‌ها ۱۲ تومن بیشتر نمونده. با نفری ۱۰۰ تومن یه مادر برمیگرده پیش خانوادش🤍",
+    "html": "<b>بچه‌ها ۱۲ تومن بیشتر نمونده. با نفری ۱۰۰ تومن یه مادر برمیگرده پیش خانوادش<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FA48D.png')\"><b>🤍</b></i></b>",
+    "date": "2026-04-21T10:52:41+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/worldsmoments/93523",
+    "timestamp": 1776768761000
+  },
+  {
+    "id": "worldsmoments/93519",
+    "channel": "worldsmoments",
+    "text": "❌ یه مورد به شدت حیاتی داریم ❌این خانوم از تیر ماه درگیر سرطان پستان شده تو یه ماه سه بار جراحی شده بخاطر استرس زیادی که داشتن پستانشون خونریزی می‌کرد.قلبش هم مشکل داره  بعد از دوره ی جراحی باید شیمی درمانی و پرتو درمانی بشه بیشتر هزینه هاشو قرض کردن  و هرچی داشتن فروختن تا تونستن یکم از درمانش رو پیش ببرن الان هیچ پولی برای ادامه‌ی درمان ندارن حال این خانوم ❌اصلا❌ خوب نیست و هرچه زودتر باید درمانش رو شروع کنه شوهرشون اعتیاد خیلی شدید داره و کلا رهاشون کرده پسر ۱۷ ساله داره نمیتونه تنهایی از پس هزینه های درمان و بدهی ها بر بیاد.ممنون میشم کمک کنید.62198618751684025859831236504584واریزی‌هاتون رو اینجا بفرستین یا اطلاع بدین حتمااا❌ یه مورد به شدت حیاتی داریم ❌این خانوم از تیر ماه درگیر سرطان پستان شده تو یه ماه سه بار جراحی شده بخاطر استرس زیادی که داشتن پستانشون خونریزی می‌کرد.قلبش هم مشکل داره  بعد از دوره ی جراحی باید شیمی درمانی و پرتو درمانی بشه بیشتر هزینه هاشو قرض کردن  و هرچی داشتن فروختن تا تونستن یکم از درمانش رو پیش ببرن الان هیچ پولی برای ادامه‌ی درمان ندارن حال این خانوم ❌اصلا❌ خوب نیست و هرچه زودتر باید درمانش رو شروع کنه شوهرشون اعتیاد خیلی شدید داره و کلا رهاشون کرده پسر ۱۷ ساله داره نمیتونه تنهایی از پس هزینه های درمان و بدهی ها بر بیاد.ممنون میشم کمک کنید.62198618751684025859831236504584واریزی‌هاتون رو اینجا بفرستین یا اطلاع بدین حتمااا",
+    "html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29D8C.png')\"><b>❌</b></i> <b>یه مورد به شدت حیاتی داریم</b> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29D8C.png')\"><b>❌</b></i><br><br><b>این خانوم از تیر ماه درگیر سرطان پستان شده تو یه ماه سه بار جراحی شده</b> بخاطر استرس زیادی که داشتن پستانشون خونریزی می‌کرد.<br>قلبش هم مشکل داره <br> بعد از دوره ی جراحی باید شیمی درمانی و پرتو درمانی بشه <br>بیشتر هزینه هاشو قرض کردن  و هرچی داشتن فروختن تا تونستن یکم از درمانش رو پیش ببرن الان هیچ پولی برای ادامه‌ی درمان ندارن حال این خانوم <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29D8C.png')\"><b>❌</b></i><b>اصلا</b><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29D8C.png')\"><b>❌</b></i> خوب نیست و هرچه زودتر باید درمانش رو شروع کنه <br>شوهرشون اعتیاد خیلی شدید داره و کلا رهاشون کرده <br>پسر ۱۷ ساله داره نمیتونه تنهایی از پس هزینه های درمان و بدهی ها بر بیاد.<br>ممنون میشم کمک کنید.<br><br><code>6219861875168402</code><br><code>5859831236504584</code><br><br><a href=\"https://t.me/MomentDonate/230?single\" target=\"_blank\" rel=\"noopener\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\"><b>واریزی‌هاتون رو اینجا بفرستین یا اطلاع بدین حتمااا</b></a></div>",
+    "date": "2026-04-21T10:51:02+00:00",
+    "images": [
+      "media/e2d8bd53056da42b429a09638484d650.jpg",
+      "media/5a79cf1c778dc0d4e082f8270ff98907.jpg",
+      "media/fe160b4c64b7d5ed6f54de4618f92b23.jpg",
+      "media/346e8d29e9ca559a49be3b85d9b1281e.jpg"
+    ],
+    "files": [],
+    "link": "https://t.me/worldsmoments/93519",
+    "timestamp": 1776768662000
+  },
+  {
+    "id": "worldsmoments/93518",
+    "channel": "worldsmoments",
+    "text": "منابع خبری آمریکایی مدعی شدند که جی‌دی ونس، معاون ترامپ، به منظور مذاکرات با ایران، تا ساعاتی دیگر واشنگتن دی سی را به مقصد اسلام آباد ترک خواهد کرد.",
+    "html": "منابع خبری آمریکایی مدعی شدند که جی‌دی ونس، معاون ترامپ، به منظور مذاکرات با ایران، تا ساعاتی دیگر واشنگتن دی سی را به مقصد اسلام آباد ترک خواهد کرد.",
+    "date": "2026-04-21T10:47:46+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/worldsmoments/93518",
+    "timestamp": 1776768466000
+  },
+  {
+    "id": "pm_afshaa/89353",
+    "channel": "pm_afshaa",
+    "text": "🔴وال استریت ژورنال:بلاتکلیفی در اسلام آباد پاکستان در میان عدم قطعیت مذاکرات واشنگتن و تهران 💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
+    "html": "<tg-emoji emoji-id=\"6044112265102235520\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i></tg-emoji>وال استریت ژورنال:بلاتکلیفی در اسلام آباد پاکستان در میان عدم قطعیت مذاکرات واشنگتن و تهران <br><br><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
+    "date": "2026-04-21T10:47:13+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/pm_afshaa/89353",
+    "timestamp": 1776768433000
+  },
+  {
+    "id": "Dirty_Kids/388302",
+    "channel": "dirty_kids",
+    "text": "علی خضریان، عضو کمیسیون امنیت ملی مجلس شورای اسلامی روز سه‌شنبه اول اردیبهشت در گفتگو با صداوسیما اعلام کرد: «از تیم مذاکره‌کننده و نزدیکان آقای قالیباف خبر موثق دارم که نمایندگان جمهوری اسلامی ایران در مذاکرات صلح اسلام‌آباد شرکت نخواهند کرد.»عباس عراقچی هم بعدازظهر سه‌شنبه اعلام کرد هنوز هیچ هیاتی از تهران به اسلام‌آباد نرفته است.@Dirty_Kids 👻",
+    "html": "علی خضریان، عضو کمیسیون امنیت ملی مجلس شورای اسلامی روز سه‌شنبه اول اردیبهشت در گفتگو با صداوسیما اعلام کرد: «از تیم مذاکره‌کننده و نزدیکان آقای قالیباف خبر موثق دارم که نمایندگان جمهوری اسلامی ایران در مذاکرات صلح اسلام‌آباد شرکت نخواهند کرد.»<br><br>عباس عراقچی هم بعدازظهر سه‌شنبه اعلام کرد هنوز هیچ هیاتی از تهران به اسلام‌آباد نرفته است.<br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
+    "date": "2026-04-21T10:46:50+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/dirty_kids/388302",
+    "timestamp": 1776768410000
+  },
+  {
+    "id": "INTERNETFORIRAN/883",
+    "channel": "INTERNETFORIRAN",
+    "text": "یکی از پروژه های فوق العاده که با استفاده از MITM و گرفتن درخواست http و relay کردن اون از طریق یک کد script گوگل امکان دسترسی به اینترنت رو فراهم کرد پروژه  https://github.com/masterking32/MasterHttpRelayVPN هست که دیروز همزمان با پروژه ی من منتشر شد. ///…تست شدبرای برنامه تلگرام روی ویندوز جواب میدهتلگرام روی ویندوز امکان استفاده از http پروکسی را داره",
+    "html": "یکی از پروژه های فوق العاده که با استفاده از MITM و گرفتن درخواست http و relay کردن اون از طریق یک کد script گوگل امکان دسترسی به اینترنت رو فراهم کرد پروژه  https://github.com/masterking32/MasterHttpRelayVPN هست که دیروز همزمان با پروژه ی من منتشر شد. ///…",
+    "date": "2026-04-21T10:46:15+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/INTERNETFORIRAN/883",
+    "timestamp": 1776768375000
+  },
+  {
+    "id": "Dirty_Kids/388300",
+    "channel": "dirty_kids",
+    "text": "تیپیکال کسانی که قراره تو کنسرت رامین سیدامامی ببینید.رامین سید امامی (کینگ‌رام) یه خوانندس تو سبک راک قراره بیاد ایران کنسرت بزاره@Dirty_Kids 👻",
+    "html": "تیپیکال کسانی که قراره تو کنسرت رامین سیدامامی ببینید.<br><br><blockquote>رامین سید امامی (کینگ‌رام) یه خوانندس تو سبک راک قراره بیاد ایران کنسرت بزاره</blockquote><br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
+    "date": "2026-04-21T10:44:03+00:00",
+    "images": [
+      "media/16e84fab42b6d8909c6eade0cc158785.jpg"
+    ],
+    "files": [],
+    "link": "https://t.me/dirty_kids/388300",
+    "timestamp": 1776768243000
+  },
+  {
+    "id": "Dirty_Kids/388301",
+    "channel": "dirty_kids",
+    "text": "از اینترنت طبقاتی کوتاه بیاییم بعد نوبت مافیایی شدن آب و برق میشه‏۹۰ میلیون گروگان دیجیتالی.@Dirty_Kids 👻",
+    "html": "از اینترنت طبقاتی کوتاه بیاییم <br>بعد نوبت مافیایی شدن آب و برق میشه<br><br>‏۹۰ میلیون گروگان دیجیتالی.<br><br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
+    "date": "2026-04-21T10:44:03+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/dirty_kids/388301",
+    "timestamp": 1776768243000
+  },
+  {
+    "id": "INTERNETFORIRAN/882",
+    "channel": "INTERNETFORIRAN",
+    "text": "https://x.com/patterniha/status/2046504283730755638یکی از پروژه های فوق العاده که با استفاده از MITM و گرفتن درخواست http و relay کردن اون از طریق یک کد script گوگل امکان دسترسی به اینترنت رو فراهم کرد پروژه https://github.com/masterking32/MasterHttpRelayVPNهست که دیروز همزمان با پروژه ی من منتشر شد.///ظاهرا بعد از انتشار این دو پروژه و کلا پروژه های مبتنی بر MITM و DomainFronting کلا ip سیف سرچ گوگل رو هم قطع کردن و تمامی سرویسهای گوگل از دسترس خارج شد.///یا همه چی یا هیچی",
+    "html": "https://x.com/patterniha/status/2046504283730755638",
+    "date": "2026-04-21T10:37:32+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/INTERNETFORIRAN/882",
+    "timestamp": 1776767852000
+  },
+  {
+    "id": "INTERNETFORIRAN/881",
+    "channel": "INTERNETFORIRAN",
+    "text": "https://x.com/patterniha/status/2046504283730755638",
+    "html": "<a href=\"https://x.com/patterniha/status/2046504283730755638\" target=\"_blank\" rel=\"noopener\">https://x.com/patterniha/status/2046504283730755638</a>",
+    "date": "2026-04-21T10:37:14+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/INTERNETFORIRAN/881",
+    "timestamp": 1776767834000
+  },
+  {
+    "id": "newscenter/62138",
+    "channel": "newscenter",
+    "text": "🔴 خبرنگار المیادین در تهران: برخی از نفتکش‌ها و کشتی‌های ایرانی علیرغم محاصره آمریکا موفق به عبور از تنگه هرمز شده‌اند✅ @newscenter",
+    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> خبرنگار المیادین در تهران: برخی از نفتکش‌ها و کشتی‌های ایرانی علیرغم محاصره آمریکا موفق به عبور از تنگه هرمز شده‌اند<br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
+    "date": "2026-04-21T10:30:39+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/newscenter/62138",
+    "timestamp": 1776767439000
+  },
+  {
+    "id": "newscenter/62137",
+    "channel": "newscenter",
+    "text": "توئیت عراقچی فیکه و خودش چیزی منتشر نکرده.   ✅ @newscenterجالبیش اینه خبرگزاری داخلی نمیدونه صفحه اصلی وزیر امور خارجه کدومه و همین طوری فیک پخش میکنه😂متنش این بود: هیچ هیاتی از ایران برای مذاکره با آمریکا به پاکستان نرفته است✅ @newscenter",
+    "html": "توئیت عراقچی فیکه و خودش چیزی منتشر نکرده.   <tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> @newscenter",
+    "date": "2026-04-21T10:29:06+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/newscenter/62137",
+    "timestamp": 1776767346000
+  },
+  {
+    "id": "newscenter/62136",
+    "channel": "newscenter",
+    "text": "توئیت عراقچی فیکه و خودش چیزی منتشر نکرده.✅ @newscenter",
+    "html": "توئیت عراقچی فیکه و خودش چیزی منتشر نکرده.<br><br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
+    "date": "2026-04-21T10:27:08+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/newscenter/62136",
+    "timestamp": 1776767228000
+  },
+  {
+    "id": "newscenter/62135",
+    "channel": "newscenter",
+    "text": "🔴 رویترز: کشور‌های عرب خلیج فارس نگرانند که نتیجه مذاکرات، تثبیت تسلط تهران بر تنگه هرمز باشد✅ @newscenter",
+    "html": "<b><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> رویترز: کشور‌های عرب خلیج فارس نگرانند که نتیجه مذاکرات، تثبیت تسلط تهران بر تنگه هرمز باشد</b><br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
+    "date": "2026-04-21T10:21:02+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/newscenter/62135",
+    "timestamp": 1776766862000
+  },
+  {
+    "id": "worldsmoments/93517",
+    "channel": "worldsmoments",
+    "text": "اگر از چنل تاسیان وی‌پی‌ان خریدید و جوابتون رو ندادن و یا سرور ندادن به ایدی زیر پیام بدید👇🏻@div4ine",
+    "html": "<b>اگر از چنل تاسیان وی‌پی‌ان خریدید و جوابتون رو ندادن و یا سرور ندادن به ایدی زیر پیام بدید<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9187F09F8FBB.png')\"><b>👇🏻</b></i><br></b><a href=\"https://t.me/div4ine\" target=\"_blank\"><b>@div4ine</b></a>",
+    "date": "2026-04-21T10:15:29+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/worldsmoments/93517",
+    "timestamp": 1776766529000
+  },
+  {
+    "id": "persianvpnhub/24119",
+    "channel": "persianvpnhub",
+    "text": "📂 فایل کانفیگ NapsternetV📍 لوکیشن: نامشخص#NapsternetV #Config #File🕒 انتشار: 13:34 - 1405/02/01💡 منبع: @Father_vpn",
+    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9382.png')\"><b>📂</b></i> فایل کانفیگ NapsternetV<br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F938D.png')\"><b>📍</b></i> لوکیشن: نامشخص<br><br><a href=\"?q=%23NapsternetV\">#NapsternetV</a> <a href=\"?q=%23Config\">#Config</a> <a href=\"?q=%23File\">#File</a><br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9592.png')\"><b>🕒</b></i> انتشار: 13:34 - 1405/02/01<br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A1.png')\"><b>💡</b></i> منبع: <a href=\"https://t.me/Father_vpn\" target=\"_blank\">@Father_vpn</a>",
+    "date": "2026-04-21T10:12:47+00:00",
+    "images": [],
+    "files": [
+      {
+        "name": "Father_vpn♥️.npvt",
+        "size": "1.7 KB"
+      }
+    ],
+    "link": "https://t.me/persianvpnhub/24119",
+    "timestamp": 1776766367000
+  },
+  {
+    "id": "persianvpnhub/24118",
+    "channel": "persianvpnhub",
+    "text": "📂 کانفیگ MTPROTO📍 لوکیشن: فنلاند 🇫🇮📶 پینگ: 142ms#Proxy #MTProto🕒 انتشار: 13:17 - 1405/02/01💡 منبع: @Proxymelimonhttps://t.me/proxy?server=95.217.25.41&port=35432&secret=ee104462821249bd7ac519130220c25d096d61782e7275",
+    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9382.png')\"><b>📂</b></i> کانفیگ MTPROTO<br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F938D.png')\"><b>📍</b></i> لوکیشن: فنلاند <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')\"><b>🇫🇮</b></i><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')\"><b>📶</b></i> پینگ: 142ms<br><br><a href=\"?q=%23Proxy\">#Proxy</a> <a href=\"?q=%23MTProto\">#MTProto</a><br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9592.png')\"><b>🕒</b></i> انتشار: 13:17 - 1405/02/01<br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A1.png')\"><b>💡</b></i> منبع: <a href=\"https://t.me/Proxymelimon\" target=\"_blank\">@Proxymelimon</a><br><br><pre>https://t.me/proxy?server=95.217.25.41&amp;port=35432&amp;secret=ee104462821249bd7ac519130220c25d096d61782e7275</pre>",
+    "date": "2026-04-21T10:12:43+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/persianvpnhub/24118",
+    "timestamp": 1776766363000
+  },
+  {
+    "id": "newscenter/62133",
+    "channel": "newscenter",
+    "text": "🔴 عملیات انهدام کنترل‌شده، امروز از ساعت ۱۶ تا ۱۸ در جزیره کیش اجرا می‌شود✅ @newscenter",
+    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> عملیات انهدام کنترل‌شده، امروز از ساعت ۱۶ تا ۱۸ در جزیره کیش اجرا می‌شود<br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
+    "date": "2026-04-21T10:07:26+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/newscenter/62133",
+    "timestamp": 1776766046000
+  },
+  {
+    "id": "worldsmoments/93516",
+    "channel": "worldsmoments",
+    "text": "نتانیاهو: تهدید وجودی دور شده؛ جنگ علیه رژیم جمهوری اسلامی و نیابتی هایش پایان نیافته است",
+    "html": "نتانیاهو: تهدید وجودی دور شده؛ جنگ علیه رژیم جمهوری اسلامی و نیابتی هایش پایان نیافته است",
+    "date": "2026-04-21T10:01:27+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/worldsmoments/93516",
+    "timestamp": 1776765687000
+  },
+  {
+    "id": "newscenter/62132",
+    "channel": "newscenter",
+    "text": "🔴 وزارت امور خارجه آلمان:  از ایران می‌خواهیم هرچه سریع‌تر به اسلام‌آباد برود و مذاکرات سازنده‌ای با ایالات متحده داشته باشد.✅ @newscenter",
+    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> وزارت امور خارجه آلمان:  از ایران می‌خواهیم هرچه سریع‌تر به اسلام‌آباد برود و مذاکرات سازنده‌ای با ایالات متحده داشته باشد.<br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
+    "date": "2026-04-21T09:59:40+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/newscenter/62132",
+    "timestamp": 1776765580000
+  },
+  {
+    "id": "worldsmoments/93515",
+    "channel": "worldsmoments",
+    "text": "وزارت قطع ارتباطات سقف ۳۰۰ پیامک و ۵ گیگ اینترنت در هر ۲۴ ساعت رو برای هر کاربر تعیین کرده.",
+    "html": "وزارت قطع ارتباطات سقف ۳۰۰ پیامک و ۵ گیگ اینترنت در هر ۲۴ ساعت رو برای هر کاربر تعیین کرده.",
+    "date": "2026-04-21T09:58:02+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/worldsmoments/93515",
+    "timestamp": 1776765482000
+  },
+  {
+    "id": "newscenter/62131",
+    "channel": "newscenter",
+    "text": "🔴 خضریان، عضو کمیسیون امنیت ملی مجلس: نزدیکان قالیباف اعلام کردند که او با شرایط فعلی قصد شرکت در مذاکرات اسلام‌آباد را ندارد✅ @newscenter",
+    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> خضریان، عضو کمیسیون امنیت ملی مجلس: نزدیکان قالیباف اعلام کردند که او با شرایط فعلی قصد شرکت در مذاکرات اسلام‌آباد را ندارد<br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
+    "date": "2026-04-21T09:53:17+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/newscenter/62131",
+    "timestamp": 1776765197000
+  },
+  {
+    "id": "pm_afshaa/89352",
+    "channel": "pm_afshaa",
+    "text": "🔴منابع خبری آمریکایی مدعی شدند که جی‌دی ونس، معاون ترامپ، به منظور مذاکرات با ایران، تا ساعاتی دیگر واشنگتن دی سی را به مقصد اسلام آباد ترک خواهد کرد💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
+    "html": "<tg-emoji emoji-id=\"6044112265102235520\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i></tg-emoji>منابع خبری آمریکایی مدعی شدند که جی‌دی ونس، معاون ترامپ، به منظور مذاکرات با ایران، تا ساعاتی دیگر واشنگتن دی سی را به مقصد اسلام آباد ترک خواهد کرد<b><br><br></b><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
+    "date": "2026-04-21T09:47:59+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/pm_afshaa/89352",
+    "timestamp": 1776764879000
+  },
+  {
+    "id": "Dirty_Kids/388298",
+    "channel": "dirty_kids",
+    "text": "در یک کلام، سگ صاحبش را در ایران نمی‌شناسد.@Dirty_Kids 👻",
+    "html": "در یک کلام، سگ صاحبش را در ایران نمی‌شناسد.<br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
+    "date": "2026-04-21T09:43:03+00:00",
+    "images": [
+      "media/2beffad702fabb05cda6dbe3d92c2a50.jpg"
+    ],
+    "files": [],
+    "link": "https://t.me/dirty_kids/388298",
+    "timestamp": 1776764583000
+  },
+  {
+    "id": "Dirty_Kids/388299",
+    "channel": "dirty_kids",
+    "text": "از اینترنت طبقاتی کوتاه بیاییم بعد نوبت مافیایی شدن آب و برق میشه‏۹۰ میلیون گروگان دیجیتالی.@Dirty_Kids 👻",
+    "html": "از اینترنت طبقاتی کوتاه بیاییم <br>بعد نوبت مافیایی شدن آب و برق میشه<br><br>‏۹۰ میلیون گروگان دیجیتالی.<br><br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
+    "date": "2026-04-21T09:43:03+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/dirty_kids/388299",
+    "timestamp": 1776764583000
+  },
+  {
+    "id": "SparrK_VPN/3636",
+    "channel": "SparrK_VPN",
+    "text": "VayDNS+SSH 🇩🇪 S4کانفیگ SlipNet 🕊 اختصاصی کانالکاملا رایگانمتصل ✅⚡️⚠️تنظیمات Slipnet حالت پیش فرض مخصوص  نسخه 2.5.2 نهاییslipnet-enc://Ae8oXsB1fGJ3ZlucrsfjO3m1WKWb6gKJydQNr610jlHkszv9UD/Cnsvv66NIffPc1nJ/6uIi2gHsx44NdN0Qa4ixOIv6WY6TpId7QFRW7QUdUs/MDaaNraPVL1Q8yGbO8ILeUwt1ptWlGeH4KhDs0qAcdJY5843w6RKFgWv2fWRRAif8kkK3bmKEwOkZRQGqiiYQ4lmXdSGY3g1MKhlYIx6K1eVPv/JxRK1A6Bu61zGTsfcqvIY9uGk+TNgiNjlBFKUc6+irznC7I3pPQz2nshVyQ4Lb+xAIggWQRv3gWl806blE6O2lRmGH99IteTin4AxL0wSVzIXsrwprfZPebNfWdfY8M4OR/evybi6Z4MmqIekJMDx9XrIkbhFRb0cR+5B1V+sDuOa5JXygqp5/4Kz7AQCCXwfupq3aTVNyIuqHEO02xR+emW14voImMreKklz1D1YQ2s2tkkxmYBdBMJGkkWN0saawnS5bG9xWO+b+mhiWspaBJ14aBz7FhYyzbSxm8EJT04aWGsa/KTEAbFjrY1tEh948Um+cQ2JSBuVExPr7kJeGN+UR7lVvioGYyG4TFnm5h53+yVPxU8EZBOceZUuMC4QoH5mzn5SMVDKNcbNq9nPLPSC8xF17GrrxxpF16YUjcRucFb4lYnTYRp6R3lRBo4yJXocRjKpmBi//8NKQzq/5wkASoKDB1gayZxE2tn64VSgQQc5L1tDEOTeo2J0FMkiz6VbFiFtNo8h2cedNXnX6ixVjMnjqR0Wkx61L2PX8gsk0mtK65GGQ60hd9LwjyrCrbbiT/BmfVPN MTU : 1232 ~ 1280 ✅JOIN : @Sparrk_VPN ✅",
+    "html": "<b>VayDNS+SSH <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')\"><b>🇩🇪</b></i> S4</b><br><br>کانفیگ SlipNet <tg-emoji emoji-id=\"5931710187827110507\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F958A.png')\"><b>🕊</b></i></tg-emoji> اختصاصی کانال<br>کاملا رایگان<br>متصل <tg-emoji emoji-id=\"5429381339851796035\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji><tg-emoji emoji-id=\"5199785165735367039\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29AA1.png')\"><b>⚡️</b></i></tg-emoji><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29AA0.png')\"><b>⚠️</b></i><b>تنظیمات Slipnet حالت پیش فرض</b> <br><b>مخصوص&nbsp; نسخه 2.5.2 نهایی</b><br><br><blockquote expandable=\"\"><code>slipnet-enc://Ae8oXsB1fGJ3ZlucrsfjO3m1WKWb6gKJydQNr610jlHkszv9UD/Cnsvv66NIffPc1nJ/6uIi2gHsx44NdN0Qa4ixOIv6WY6TpId7QFRW7QUdUs/MDaaNraPVL1Q8yGbO8ILeUwt1ptWlGeH4KhDs0qAcdJY5843w6RKFgWv2fWRRAif8kkK3bmKEwOkZRQGqiiYQ4lmXdSGY3g1MKhlYIx6K1eVPv/JxRK1A6Bu61zGTsfcqvIY9uGk+TNgiNjlBFKUc6+irznC7I3pPQz2nshVyQ4Lb+xAIggWQRv3gWl806blE6O2lRmGH99IteTin4AxL0wSVzIXsrwprfZPebNfWdfY8M4OR/evybi6Z4MmqIekJMDx9XrIkbhFRb0cR+5B1V+sDuOa5JXygqp5/4Kz7AQCCXwfupq3aTVNyIuqHEO02xR+emW14voImMreKklz1D1YQ2s2tkkxmYBdBMJGkkWN0saawnS5bG9xWO+b+mhiWspaBJ14aBz7FhYyzbSxm8EJT04aWGsa/KTEAbFjrY1tEh948Um+cQ2JSBuVExPr7kJeGN+UR7lVvioGYyG4TFnm5h53+yVPxU8EZBOceZUuMC4QoH5mzn5SMVDKNcbNq9nPLPSC8xF17GrrxxpF16YUjcRucFb4lYnTYRp6R3lRBo4yJXocRjKpmBi//8NKQzq/5wkASoKDB1gayZxE2tn64VSgQQc5L1tDEOTeo2J0FMkiz6VbFiFtNo8h2cedNXnX6ixVjMnjqR0Wkx61L2PX8gsk0mtK65GGQ60hd9LwjyrCrbbiT/Bmf</code><br></blockquote><br><br><b>VPN MTU : 1232 ~ 1280</b> <tg-emoji emoji-id=\"5415607860769857239\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji><br><br><blockquote>JOIN : <a href=\"https://t.me/Sparrk_VPN\" target=\"_blank\">@Sparrk_VPN</a> <tg-emoji emoji-id=\"5199628545457923796\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji></blockquote>",
+    "date": "2026-04-21T09:41:50+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/SparrK_VPN/3636",
+    "timestamp": 1776764510000
+  },
+  {
+    "id": "Dirty_Kids/388297",
+    "channel": "dirty_kids",
+    "text": "گوگل دوباره فیلتر شده    @Dirty_Kids 👻گوگل وصل شد 😂",
+    "html": "گوگل دوباره فیلتر شده    @Dirty_Kids <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
+    "date": "2026-04-21T09:33:26+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/dirty_kids/388297",
+    "timestamp": 1776764006000
+  },
+  {
+    "id": "newscenter/62130",
+    "channel": "newscenter",
+    "text": "✅ @newscenter",
+    "html": "<tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
+    "date": "2026-04-21T09:31:41+00:00",
+    "images": [
+      "media/a52e0c5c04a5eeb116b6a8831889114b.jpg"
+    ],
+    "files": [],
+    "link": "https://t.me/newscenter/62130",
+    "timestamp": 1776763901000
+  },
+  {
     "id": "worldsmoments/93514",
     "channel": "worldsmoments",
     "text": "🔴 طبق گزارش اکسیوس ، رهبر ایران اجازه داده است که هیئت ایرانی برای مذاکرات با ایالات متحده به اسلام‌آباد اعزام شود",
@@ -3847,502 +4226,5 @@
     "files": [],
     "link": "https://t.me/mizangorup/69926",
     "timestamp": 1776683341000
-  },
-  {
-    "id": "newscenter/62083",
-    "channel": "newscenter",
-    "text": "🔴 هشدار سونامی  در ژاپن پس از زلزله ۷.۴ ریشتری🔻پس از وقوع زلزله‌ای به بزرگی ۷.۴ ریشتر در آب‌های ساحلی ژاپن، هشدار سونامی برای سواحل هونشو صادر شده است.🔻از ساکنان مناطق نزدیک به ساحل خواسته شده است که فوراً به مناطق مرتفع منتقل شوند.✅ @newscenter",
-    "html": "<b><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> هشدار سونامی  در ژاپن پس از زلزله ۷.۴ ریشتری</b><br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')\"><b>🔻</b></i>پس از وقوع زلزله‌ای به بزرگی ۷.۴ ریشتر در آب‌های ساحلی ژاپن، هشدار سونامی برای سواحل هونشو صادر شده است.<br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')\"><b>🔻</b></i>از ساکنان مناطق نزدیک به ساحل خواسته شده است که فوراً به مناطق مرتفع منتقل شوند.<br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
-    "date": "2026-04-20T11:05:34+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/newscenter/62083",
-    "timestamp": 1776683134000
-  },
-  {
-    "id": "worldsmoments/93455",
-    "channel": "worldsmoments",
-    "text": "قیمت هرشانه تخم مرغ از 1404 تا به امروز: تیر: ۹۰ تومن.مرداد: ۱۲۰ تومن.شهریور: ۱۷۰ تومن.مهر: ۲۰۰ تومن.آبان: ۲۲۵ تومن.آذر: ۲۶۰ تومن.دی: ۳۳۰ تومن.بهمن: ۴۴۰ تومن.اسفند: ۴۰۰ تومن.فروردین (امروز): ۵۴۰ تومن",
-    "html": "قیمت هرشانه تخم مرغ از 1404 تا به امروز:<br><br> تیر: ۹۰ تومن.<br>مرداد: ۱۲۰ تومن.<br>شهریور: ۱۷۰ تومن.<br>مهر: ۲۰۰ تومن.<br>آبان: ۲۲۵ تومن.<br>آذر: ۲۶۰ تومن.<br>دی: ۳۳۰ تومن.<br>بهمن: ۴۴۰ تومن.<br>اسفند: ۴۰۰ تومن.<br>فروردین (امروز): ۵۴۰ تومن",
-    "date": "2026-04-20T11:04:59+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/worldsmoments/93455",
-    "timestamp": 1776683099000
-  },
-  {
-    "id": "newscenter/62082",
-    "channel": "newscenter",
-    "text": "🔴 خبرنگار المیادین : مقامات پاکستانی دارن بصورت فشرده با تهران و واشنگتن تماس میگیرن تا بتونن دور دوم مذاکرات رو برگزار کنن.✅ @newscenter",
-    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> خبرنگار المیادین : مقامات پاکستانی دارن بصورت فشرده با تهران و واشنگتن تماس میگیرن تا بتونن دور دوم مذاکرات رو برگزار کنن.<br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
-    "date": "2026-04-20T10:51:48+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/newscenter/62082",
-    "timestamp": 1776682308000
-  },
-  {
-    "id": "SparrK_VPN/3614",
-    "channel": "SparrK_VPN",
-    "text": "منم ستاره 😭",
-    "html": "منم ستاره <tg-emoji emoji-id=\"5767270192304364497\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F98AD.png')\"><b>😭</b></i></tg-emoji>",
-    "date": "2026-04-20T10:48:32+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/SparrK_VPN/3614",
-    "timestamp": 1776682112000
-  },
-  {
-    "id": "SparrK_VPN/3613",
-    "channel": "SparrK_VPN",
-    "text": "منم فقط جزو بدبختا بودم",
-    "html": "منم فقط جزو بدبختا بودم",
-    "date": "2026-04-20T10:48:14+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/SparrK_VPN/3613",
-    "timestamp": 1776682094000
-  },
-  {
-    "id": "Break_The_Barriers/1298",
-    "channel": "Break_the_barriers",
-    "text": "وقتی میشه با یه جمله \"گه خوردم کپی کردم و اسم صاحبشو نزدم روش و الکی نوشتم فوق اختصاصی کانال متصل به ناسا\" مشکل رو حل کنه چرا این همه داستان میسازه؟",
-    "html": "وقتی میشه با یه جمله \"گه خوردم کپی کردم و اسم صاحبشو نزدم روش و الکی نوشتم فوق اختصاصی کانال متصل به ناسا\" مشکل رو حل کنه چرا این همه داستان میسازه؟",
-    "date": "2026-04-20T10:47:31+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/Break_the_barriers/1298",
-    "timestamp": 1776682051000
-  },
-  {
-    "id": "SparrK_VPN/3612",
-    "channel": "SparrK_VPN",
-    "text": "🙁",
-    "html": "<tg-emoji emoji-id=\"5456290628516190918\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9981.png')\"><b>🙁</b></i></tg-emoji>",
-    "date": "2026-04-20T10:47:09+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/SparrK_VPN/3612",
-    "timestamp": 1776682029000
-  },
-  {
-    "id": "SparrK_VPN/3611",
-    "channel": "SparrK_VPN",
-    "text": "جکامون تمام شد",
-    "html": "جکامون تمام شد",
-    "date": "2026-04-20T10:47:06+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/SparrK_VPN/3611",
-    "timestamp": 1776682026000
-  },
-  {
-    "id": "SparrK_VPN/3610",
-    "channel": "SparrK_VPN",
-    "text": "✍️ مثلاً الان بعضیا میگن اینترنتشون خودبه‌خود بدون فیلتر شده و همه‌چی براشون بازه.⁉️ سؤال اینه: چرا من هیچ‌وقت جزو اون «بعضیا» نبودم؟",
-    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C8D.png')\"><b>✍️</b></i> مثلاً الان بعضیا میگن اینترنتشون خودبه‌خود بدون فیلتر شده و همه‌چی براشون بازه.<br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E28189.png')\"><b>⁉️</b></i> سؤال اینه: چرا من هیچ‌وقت جزو اون «بعضیا» نبودم؟",
-    "date": "2026-04-20T10:45:44+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/SparrK_VPN/3610",
-    "timestamp": 1776681944000
-  },
-  {
-    "id": "SparrK_VPN/3609",
-    "channel": "SparrK_VPN",
-    "text": "‏سلمونی خیلی شغل خوبیه جدی.نه هوش مصنوعی واسش تهدید حساب میشه، نه به اینترنت وابسته‌س.هر موزیکی میخوای پلی میکنی نیم ساعت میرینی رو کله خلق‌الله، بوبولتو میمالی به آرنجشون، آخرم میگی به به عجب مدلی شد پونصد کارت بکش.",
-    "html": "‏سلمونی خیلی شغل خوبیه جدی.<br>نه هوش مصنوعی واسش تهدید حساب میشه، نه به اینترنت وابسته‌س.<br>هر موزیکی میخوای پلی میکنی نیم ساعت میرینی رو کله خلق‌الله، بوبولتو میمالی به آرنجشون، آخرم میگی به به عجب مدلی شد پونصد کارت بکش.",
-    "date": "2026-04-20T10:45:31+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/SparrK_VPN/3609",
-    "timestamp": 1776681931000
-  },
-  {
-    "id": "SparrK_VPN/3608",
-    "channel": "SparrK_VPN",
-    "text": "یکم جک بگیم",
-    "html": "یکم جک بگیم",
-    "date": "2026-04-20T10:45:19+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/SparrK_VPN/3608",
-    "timestamp": 1776681919000
-  },
-  {
-    "id": "pm_afshaa/89300",
-    "channel": "pm_afshaa",
-    "text": "شورای شهر تهران قراره اسم خیابون آزادی تهران رو به «علی خامنه‌ای» تغییر بده💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
-    "html": "شورای شهر تهران قراره اسم خیابون آزادی تهران رو به «علی خامنه‌ای» تغییر بده<br><br><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
-    "date": "2026-04-20T10:44:25+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/pm_afshaa/89300",
-    "timestamp": 1776681865000
-  },
-  {
-    "id": "Dirty_Kids/388261",
-    "channel": "dirty_kids",
-    "text": "‏هنوز متوجه نیت واقعی مردم در نظرسنجی‌های حکومتی نشده‌اند!‏تحلیلگر صداوسیما: طبق نظرسنجی‌ها مردم می‌گویند باید جنگ را ادامه دهیم!@Dirty_Kids 👻",
-    "html": "‏هنوز متوجه نیت واقعی مردم در نظرسنجی‌های حکومتی نشده‌اند!<br><br>‏تحلیلگر صداوسیما: طبق نظرسنجی‌ها مردم می‌گویند باید جنگ را ادامه دهیم!<br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
-    "date": "2026-04-20T10:44:03+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/dirty_kids/388261",
-    "timestamp": 1776681843000
-  },
-  {
-    "id": "Dirty_Kids/388260",
-    "channel": "dirty_kids",
-    "text": "🔴 شیردختران وطن؛ بیتا همتی، غزال قالندری، گلناز نراقی، ونوس حسین‌نژاد، پناه موحدی، انسیه نجاتی، محبوبه شعبانی و دیانا طاهر آبادی از بازداشتی‌های اعتراضات دی‌ماه ۱۴۰۴ با خطر جدی حکم اعدام روبرو هستن.@Dirty_Kids 👻",
-    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> شیردختران وطن؛ بیتا همتی، غزال قالندری، گلناز نراقی، ونوس حسین‌نژاد، پناه موحدی، انسیه نجاتی، محبوبه شعبانی و دیانا طاهر آبادی از بازداشتی‌های اعتراضات دی‌ماه ۱۴۰۴ با خطر جدی حکم اعدام روبرو هستن.<br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
-    "date": "2026-04-20T10:44:02+00:00",
-    "images": [
-      "media/fd7710b46401d00b48d68b2ecdc26f66.jpg"
-    ],
-    "files": [],
-    "link": "https://t.me/dirty_kids/388260",
-    "timestamp": 1776681842000
-  },
-  {
-    "id": "Break_The_Barriers/1296",
-    "channel": "Break_the_barriers",
-    "text": "بگو اگه مشکلی نداره منم برم یه دو کی ری اکت فیک بگیرم مادرج",
-    "html": "بگو اگه مشکلی نداره منم برم یه دو کی ری اکت فیک بگیرم مادرج",
-    "date": "2026-04-20T10:43:28+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/Break_the_barriers/1296",
-    "timestamp": 1776681808000
-  },
-  {
-    "id": "Break_The_Barriers/1297",
-    "channel": "Break_the_barriers",
-    "text": "ری اکا پستای بالاش تو کل این ۵۰ روز بالای ۵۰ تا نرفته الان داره میره بالای ۲۰۰",
-    "html": "ری اکا پستای بالاش تو کل این ۵۰ روز بالای ۵۰ تا نرفته الان داره میره بالای ۲۰۰",
-    "date": "2026-04-20T10:43:28+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/Break_the_barriers/1297",
-    "timestamp": 1776681808000
-  },
-  {
-    "id": "Break_The_Barriers/1295",
-    "channel": "Break_the_barriers",
-    "text": "من تلاشم و در این زمینه ادامه میدم و دریغ نمی‌کنم.جمله یک نقص کوچک داره، اونم اینه:من تلاشم رو در این زمینه «دزدی» ادامه می‌دم و دریغ نمی‌کنم.به دزد بودنشون افتخار می‌کنن.",
-    "html": "من تلاشم و در این زمینه ادامه میدم و دریغ نمی‌کنم.",
-    "date": "2026-04-20T10:40:25+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/Break_the_barriers/1295",
-    "timestamp": 1776681625000
-  },
-  {
-    "id": "Break_The_Barriers/1293",
-    "channel": "Break_the_barriers",
-    "text": "من تلاش میکنم، وقت صرف میکنم و از جیب خودم هزینه میکنه که در حد توانم کمک کنم. بعد یه سری حرامزاده هزار پدر میان کانفیگ‌های کانال رو تغییر نام میدن و به اسم خودشون منتشر میکنن.اولا از همه اعضا میخوام این حرومزاده رو ریپورت کنن. @TirexNetدوما اگر فردا روزی فعالیت من کم شد بدونید به خاطر این زنازاده‌های دزد و بیشرفه",
-    "html": "من تلاش میکنم، وقت صرف میکنم و از جیب خودم هزینه میکنه که در حد توانم کمک کنم. بعد یه سری حرامزاده هزار پدر میان کانفیگ‌های کانال رو تغییر نام میدن و به اسم خودشون منتشر میکنن.<br><br>اولا از همه اعضا میخوام این حرومزاده رو ریپورت کنن. <a href=\"https://t.me/TirexNet\" target=\"_blank\">@TirexNet</a><br>دوما اگر فردا روزی فعالیت من کم شد بدونید به خاطر این زنازاده‌های دزد و بیشرفه",
-    "date": "2026-04-20T10:35:14+00:00",
-    "images": [
-      "media/621a362c6fa651f4cbac057b020b6e0f.jpg"
-    ],
-    "files": [],
-    "link": "https://t.me/Break_the_barriers/1293",
-    "timestamp": 1776681314000
-  },
-  {
-    "id": "Break_The_Barriers/1294",
-    "channel": "Break_the_barriers",
-    "text": "اینم خود بی پدر و مادرشه@A1383616یه دزد حرومزاده",
-    "html": "اینم خود بی پدر و مادرشه<br><br><a href=\"https://t.me/A1383616\" target=\"_blank\">@A1383616</a><br><br>یه دزد حرومزاده",
-    "date": "2026-04-20T10:35:14+00:00",
-    "images": [
-      "media/f6d65cbd168af4c14b8b001be3091399.jpg"
-    ],
-    "files": [],
-    "link": "https://t.me/Break_the_barriers/1294",
-    "timestamp": 1776681314000
-  },
-  {
-    "id": "SparrK_VPN/3607",
-    "channel": "SparrK_VPN",
-    "text": "خب انگار همه ی ایران به جز خودم  وصلن این مدلی 😃",
-    "html": "خب انگار همه ی ایران به جز خودم  وصلن این مدلی <tg-emoji emoji-id=\"5280533617506788484\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9883.png')\"><b>😃</b></i></tg-emoji>",
-    "date": "2026-04-20T10:33:31+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/SparrK_VPN/3607",
-    "timestamp": 1776681211000
-  },
-  {
-    "id": "SparrK_VPN/3606",
-    "channel": "SparrK_VPN",
-    "text": "شهرای شمالی هم تست کنید  از رشت همراه اول میگن اوکیه 😃",
-    "html": "شهرای شمالی هم تست کنید  از رشت همراه اول میگن اوکیه <tg-emoji emoji-id=\"5280533617506788484\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9883.png')\"><b>😃</b></i></tg-emoji>",
-    "date": "2026-04-20T10:32:52+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/SparrK_VPN/3606",
-    "timestamp": 1776681172000
-  },
-  {
-    "id": "worldsmoments/93454",
-    "channel": "worldsmoments",
-    "text": "بچه‌ها پسرش از استرس داره دیوونه میشه نفری هرچقدر میتونین بزنین مادرش برگرده پیشش🙏",
-    "html": "<b>بچه‌ها پسرش از استرس داره دیوونه میشه نفری هرچقدر میتونین بزنین مادرش برگرده پیشش<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F998F.png')\"><b>🙏</b></i></b>",
-    "date": "2026-04-20T10:31:11+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/worldsmoments/93454",
-    "timestamp": 1776681071000
-  },
-  {
-    "id": "SparrK_VPN/3605",
-    "channel": "SparrK_VPN",
-    "text": "اکثرا دوستانی که تلگرام بدون فیلتر واسشون بالا اومده از شهرهای غربی کشور هستن  مثل تبریز و ارومیه ..",
-    "html": "اکثرا دوستانی که تلگرام بدون فیلتر واسشون بالا اومده از شهرهای غربی کشور هستن  مثل تبریز و ارومیه ..",
-    "date": "2026-04-20T10:30:51+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/SparrK_VPN/3605",
-    "timestamp": 1776681051000
-  },
-  {
-    "id": "Break_The_Barriers/1292",
-    "channel": "Break_the_barriers",
-    "text": "با کانفیگ‌های کانال‌های بقیه، که براشون شبانه‌روز زحمت کشیده شده و هزینه شده، ممبر جذب می‌کنن و بعد خیلی راحت می‌فروشن!اگر احساس می‌کنید نباید کاری کرد، من هم سرورها رو خاموش می‌کنم.چون این‌جوری دارم طعمه درست می‌کنم برای بقیه.",
-    "html": "با کانفیگ‌های کانال‌های بقیه، که براشون شبانه‌روز زحمت کشیده شده و هزینه شده، ممبر جذب می‌کنن و بعد خیلی راحت می‌فروشن!<br><br><br>اگر احساس می‌کنید نباید کاری کرد، من هم سرورها رو خاموش می‌کنم.<br><br>چون این‌جوری دارم طعمه درست می‌کنم برای بقیه.",
-    "date": "2026-04-20T10:30:02+00:00",
-    "images": [
-      "media/272530f08b34c3c2db76ff271f48e477.jpg"
-    ],
-    "files": [],
-    "link": "https://t.me/Break_the_barriers/1292",
-    "timestamp": 1776681002000
-  },
-  {
-    "id": "Break_The_Barriers/1291",
-    "channel": "Break_the_barriers",
-    "text": "سعی کردی مخفی کنی، اما خب حتی نتونستی این کار ساده رو انجام بدی.تمام کانفیگ‌های این کانال، دزدیده شده از من بقیه است.@TirexNetریپورتش کنید!",
-    "html": "سعی کردی مخفی کنی، اما خب حتی نتونستی این کار ساده رو انجام بدی.<br><br>تمام کانفیگ‌های این کانال، دزدیده شده از من بقیه است.<br><br><a href=\"https://t.me/TirexNet\" target=\"_blank\">@TirexNet</a><br><br>ریپورتش کنید!",
-    "date": "2026-04-20T10:29:53+00:00",
-    "images": [
-      "media/aa25b9eb2ce5b91286df7534929ddd1b.jpg"
-    ],
-    "files": [],
-    "link": "https://t.me/Break_the_barriers/1291",
-    "timestamp": 1776680993000
-  },
-  {
-    "id": "worldsmoments/93450",
-    "channel": "worldsmoments",
-    "text": "❌ یه مورد به شدت حیاتی داریم ❌این خانوم از تیر ماه درگیر سرطان پستان شده تو یه ماه سه بار جراحی شده بخاطر استرس زیادی که داشتن پستانشون خونریزی می‌کرد.قلبش هم مشکل داره  بعد از دوره ی جراحی باید شیمی درمانی و پرتو درمانی بشه بیشتر هزینه هاشو قرض کردن  و هرچی داشتن فروختن تا تونستن یکم از درمانش رو پیش ببرن الان هیچ پولی برای ادامه‌ی درمان ندارن حال این خانوم ❌اصلا❌ خوب نیست و هرچه زودتر باید درمانش رو شروع کنه شوهرشون اعتیاد خیلی شدید داره و کلا رهاشون کرده پسر ۱۷ ساله داره نمیتونه تنهایی از پس هزینه های درمان و بدهی ها بر بیاد.ممنون میشم کمک کنید.62198618751684025859831236504584واریزی‌هاتون رو اینجا بفرستین یا اطلاع بدین حتمااا❌ یه مورد به شدت حیاتی داریم ❌این خانوم از تیر ماه درگیر سرطان پستان شده تو یه ماه سه بار جراحی شده بخاطر استرس زیادی که داشتن پستانشون خونریزی می‌کرد.قلبش هم مشکل داره  بعد از دوره ی جراحی باید شیمی درمانی و پرتو درمانی بشه بیشتر هزینه هاشو قرض کردن  و هرچی داشتن فروختن تا تونستن یکم از درمانش رو پیش ببرن الان هیچ پولی برای ادامه‌ی درمان ندارن حال این خانوم ❌اصلا❌ خوب نیست و هرچه زودتر باید درمانش رو شروع کنه شوهرشون اعتیاد خیلی شدید داره و کلا رهاشون کرده پسر ۱۷ ساله داره نمیتونه تنهایی از پس هزینه های درمان و بدهی ها بر بیاد.ممنون میشم کمک کنید.62198618751684025859831236504584واریزی‌هاتون رو اینجا بفرستین یا اطلاع بدین حتمااا",
-    "html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29D8C.png')\"><b>❌</b></i> <b>یه مورد به شدت حیاتی داریم</b> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29D8C.png')\"><b>❌</b></i><br><br><b>این خانوم از تیر ماه درگیر سرطان پستان شده تو یه ماه سه بار جراحی شده</b> بخاطر استرس زیادی که داشتن پستانشون خونریزی می‌کرد.<br>قلبش هم مشکل داره <br> بعد از دوره ی جراحی باید شیمی درمانی و پرتو درمانی بشه <br>بیشتر هزینه هاشو قرض کردن  و هرچی داشتن فروختن تا تونستن یکم از درمانش رو پیش ببرن الان هیچ پولی برای ادامه‌ی درمان ندارن حال این خانوم <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29D8C.png')\"><b>❌</b></i><b>اصلا</b><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29D8C.png')\"><b>❌</b></i> خوب نیست و هرچه زودتر باید درمانش رو شروع کنه <br>شوهرشون اعتیاد خیلی شدید داره و کلا رهاشون کرده <br>پسر ۱۷ ساله داره نمیتونه تنهایی از پس هزینه های درمان و بدهی ها بر بیاد.<br>ممنون میشم کمک کنید.<br><br><code>6219861875168402</code><br><code>5859831236504584</code><br><br><a href=\"https://t.me/MomentDonate/230?single\" target=\"_blank\" rel=\"noopener\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\"><b>واریزی‌هاتون رو اینجا بفرستین یا اطلاع بدین حتمااا</b></a></div>",
-    "date": "2026-04-20T10:28:15+00:00",
-    "images": [
-      "media/e2d8bd53056da42b429a09638484d650.jpg",
-      "media/5a79cf1c778dc0d4e082f8270ff98907.jpg",
-      "media/fe160b4c64b7d5ed6f54de4618f92b23.jpg",
-      "media/346e8d29e9ca559a49be3b85d9b1281e.jpg"
-    ],
-    "files": [],
-    "link": "https://t.me/worldsmoments/93450",
-    "timestamp": 1776680895000
-  },
-  {
-    "id": "NetAccount/17197",
-    "channel": "NetAccount",
-    "text": "کانفیگ برنامه اینجکتور (Http injector)لینک داخلی",
-    "html": "کانفیگ برنامه اینجکتور (Http injector)<br><br><a href=\"https://c147793.parspack.net/c147793/HTTP-Injector_universal_6.5.0.apk\" target=\"_blank\" rel=\"noopener\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\">لینک داخلی</a>",
-    "date": "2026-04-20T10:25:31+00:00",
-    "images": [],
-    "files": [
-      {
-        "name": "NetAccount61.ehi",
-        "size": "15 KB"
-      }
-    ],
-    "link": "https://t.me/NetAccount/17197",
-    "timestamp": 1776680731000
-  },
-  {
-    "id": "SparrK_VPN/3604",
-    "channel": "SparrK_VPN",
-    "text": "اگه بدون فیلتر بالا میاد دایرکت اطلاع بدین",
-    "html": "اگه بدون فیلتر بالا میاد دایرکت اطلاع بدین",
-    "date": "2026-04-20T10:25:01+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/SparrK_VPN/3604",
-    "timestamp": 1776680701000
-  },
-  {
-    "id": "worldsmoments/93449",
-    "channel": "worldsmoments",
-    "text": "🔴 طبق گزارشات ‌نت همراه اول باز بدون فیلتر شده.    تلگرام و اینستا در شهرای زیر بدون فیلتر وصلن:  ارومیه، کرمانشاه، پاوه، ثلاث، سلماس، بانه، مریوان، مهاباد، ایلام، سنندج، رشت، گیلان، تبریز، زنجان، اردبیل، شیراز، ساری، تربت، حیدریه مشگین شهر، ایرانشهر، فومن،…احتمالا بعدش قراره یجوری قطعمون کنن کانفیگ های یک میلیونیمون هم از کار بیفته",
-    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> طبق گزارشات ‌نت همراه اول باز بدون فیلتر شده.    تلگرام و اینستا در شهرای زیر بدون فیلتر وصلن:  ارومیه، کرمانشاه، پاوه، ثلاث، سلماس، بانه، مریوان، مهاباد، ایلام، سنندج، رشت، گیلان، تبریز، زنجان، اردبیل، شیراز، ساری، تربت، حیدریه مشگین شهر، ایرانشهر، فومن،…",
-    "date": "2026-04-20T10:24:17+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/worldsmoments/93449",
-    "timestamp": 1776680657000
-  },
-  {
-    "id": "SparrK_VPN/3603",
-    "channel": "SparrK_VPN",
-    "text": "دوستان همراه اولی  تست کنید ببینید تلگرام بدون فیلتر بالا میاد ؟",
-    "html": "دوستان همراه اولی  تست کنید ببینید تلگرام بدون فیلتر بالا میاد ؟",
-    "date": "2026-04-20T10:21:52+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/SparrK_VPN/3603",
-    "timestamp": 1776680512000
-  },
-  {
-    "id": "pm_afshaa/89299",
-    "channel": "pm_afshaa",
-    "text": "اینترنت آزاد، حق همگانی است؛ نه امتیازی برای فروش.‏«اینترنت پرو» یعنی طبقاتی‌کردن یک حق عمومی و وادار کردن مردم به انتخاب میان «شرافت» و «رفاه».حق مردم را قطره‌چکانی نفروشید؛ تبعیض را هم به اسم «خدمت ویژه» جا نزنید.💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
-    "html": "اینترنت آزاد، حق همگانی است؛ نه امتیازی برای فروش.<br><br>‏«اینترنت پرو» یعنی طبقاتی‌کردن یک حق عمومی و وادار کردن مردم به انتخاب میان «شرافت» و «رفاه».<br><br>حق مردم را قطره‌چکانی نفروشید؛ تبعیض را هم به اسم «خدمت ویژه» جا نزنید.<br><br><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
-    "date": "2026-04-20T10:18:44+00:00",
-    "images": [
-      "media/e819eb912cc5f951abe93d8b70d1dc4a.jpg"
-    ],
-    "files": [],
-    "link": "https://t.me/pm_afshaa/89299",
-    "timestamp": 1776680324000
-  },
-  {
-    "id": "worldsmoments/93448",
-    "channel": "worldsmoments",
-    "text": "🔴 طبق گزارشات ‌نت همراه اول باز بدون فیلتر شده.  تلگرام و اینستا در شهرای زیر بدون فیلتر وصلن:ارومیه، کرمانشاه، پاوه، ثلاث، سلماس، بانه، مریوان، مهاباد، ایلام، سنندج، رشت، گیلان، تبریز، زنجان، اردبیل، شیراز، ساری، تربت، حیدریه مشگین شهر، ایرانشهر، فومن، جهرم",
-    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> طبق گزارشات ‌نت همراه اول باز بدون فیلتر شده.<br><br>  تلگرام و اینستا در شهرای زیر بدون فیلتر وصلن:<br><br>ارومیه، کرمانشاه، پاوه، ثلاث، سلماس، بانه، مریوان، مهاباد، ایلام، سنندج، رشت، گیلان، تبریز، زنجان، اردبیل، شیراز، ساری، تربت، حیدریه مشگین شهر، ایرانشهر، فومن، جهرم",
-    "date": "2026-04-20T10:18:31+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/worldsmoments/93448",
-    "timestamp": 1776680311000
-  },
-  {
-    "id": "newscenter/62081",
-    "channel": "newscenter",
-    "text": "العرببه به نقل از یک مقام پاکستانی: ترامپ به فرمانده ارتش پاکستان قول داد که محاصره دریایی را بررسی کند تا مذاکرات تسهیل شود. ✅ @newscenter",
-    "html": "العرببه به نقل از یک مقام پاکستانی: ترامپ به فرمانده ارتش پاکستان قول داد که محاصره دریایی را بررسی کند تا مذاکرات تسهیل شود. <br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
-    "date": "2026-04-20T10:16:43+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/newscenter/62081",
-    "timestamp": 1776680203000
-  },
-  {
-    "id": "mizangorup/69925",
-    "channel": "mizangorup",
-    "text": "🔴 فکر کن میخوان اسم خیابون آزادی رو بذارن آیت الله خامنه‌ای 🤣حتی جاگذاریشونم خوب نیست تهش یه بن بست باریک براش در نظر میگرفتید@mizangorup",
-    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> فکر کن میخوان اسم خیابون آزادی رو بذارن آیت الله خامنه‌ای <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FA4A3.png')\"><b>🤣</b></i><br><br>حتی جاگذاریشونم خوب نیست <br><br>تهش یه بن بست باریک براش در نظر میگرفتید<br><br><br><br><a href=\"https://t.me/mizangorup\" target=\"_blank\">@mizangorup</a>",
-    "date": "2026-04-20T10:11:12+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/mizangorup/69925",
-    "timestamp": 1776679872000
-  },
-  {
-    "id": "mizangorup/69923",
-    "channel": "mizangorup",
-    "text": "🔴 بقایی می‌گوید اورانیوم غنی‌شده برای رژیم «مقدس» است و درباره‌اش مذاکره نمی‌کنند؛ یکی بپرسد پس دقیقاً قرار است درباره چه چیزی مذاکره کنند!@mizangorup",
-    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> <b>بقایی می‌گوید اورانیوم غنی‌شده برای رژیم «مقدس» است و درباره‌اش مذاکره نمی‌کنند؛ یکی بپرسد پس دقیقاً قرار است درباره چه چیزی مذاکره کنند!</b><br><br><br><br><a href=\"https://t.me/mizangorup\" target=\"_blank\">@mizangorup</a>",
-    "date": "2026-04-20T10:10:23+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/mizangorup/69923",
-    "timestamp": 1776679823000
-  },
-  {
-    "id": "mizangorup/69924",
-    "channel": "mizangorup",
-    "text": "🔴 تداوم توهم رژیم: بقایی می گوید؛بارها گفتیم درباره توانمندی‌های دفاعی‌مان اصلا گفتگو نمی‌کنیم!@mizangorup",
-    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> <b>تداوم توهم رژیم: بقایی می گوید؛بارها گفتیم درباره توانمندی‌های دفاعی‌مان اصلا گفتگو نمی‌کنیم!</b><br><br><br><br><a href=\"https://t.me/mizangorup\" target=\"_blank\">@mizangorup</a>",
-    "date": "2026-04-20T10:10:23+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/mizangorup/69924",
-    "timestamp": 1776679823000
-  },
-  {
-    "id": "pm_afshaa/89298",
-    "channel": "pm_afshaa",
-    "text": "🔴کانال 12 اسرائیل: کابینه امنیتی امروز جلسه‌ای را که قبلاً به تعویق افتاده بود، برای بحث در مورد تحولات پرونده‌های ایران و لبنان برگزار می‌کند💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
-    "html": "<tg-emoji emoji-id=\"6044112265102235520\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i></tg-emoji>کانال 12 اسرائیل: کابینه امنیتی امروز جلسه‌ای را که قبلاً به تعویق افتاده بود، برای بحث در مورد تحولات پرونده‌های ایران و لبنان برگزار می‌کند<br><br><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
-    "date": "2026-04-20T09:45:45+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/pm_afshaa/89298",
-    "timestamp": 1776678345000
-  },
-  {
-    "id": "newscenter/62080",
-    "channel": "newscenter",
-    "text": "🔴 کرملین: روسیه میانجی ایران نیست اما در صورت لزوم آماده‌ایم ✅ @newscenter",
-    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> کرملین: روسیه میانجی ایران نیست اما در صورت لزوم آماده‌ایم <br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
-    "date": "2026-04-20T09:45:41+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/newscenter/62080",
-    "timestamp": 1776678341000
-  },
-  {
-    "id": "Dirty_Kids/388259",
-    "channel": "dirty_kids",
-    "text": "میخوای کنار رهبرت باشی برو تو یخچال میهن، وسط خیابون چیکار میکنی؟@Dirty_Kids 👻",
-    "html": "میخوای کنار رهبرت باشی برو تو یخچال میهن، وسط خیابون چیکار میکنی؟<br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
-    "date": "2026-04-20T09:43:03+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/dirty_kids/388259",
-    "timestamp": 1776678183000
-  },
-  {
-    "id": "Dirty_Kids/388258",
-    "channel": "dirty_kids",
-    "text": "بعد از ‎#ابرآروان، حالا نوبت بچه کول های درس خونده ‎#امن_افزار_گستر هستش که به شغل جا*کشی فیلترینگ و محدودیت اینترنت رو بیارن. این پایین ۲۰ تا از نسل جدید زندانبان های اینترنت در ایران رو براتون جمع کردم. به این هزار پدر ها رحم نکنید، معروفشون کنید تو در و همسایه و فامیل.#DigitalBlackoutIran@Dirty_Kids 👻",
-    "html": "بعد از ‎<a href=\"?q=%23%D8%A7%D8%A8%D8%B1%D8%A2%D8%B1%D9%88%D8%A7%D9%86\">#ابرآروان</a>، حالا نوبت بچه کول های درس خونده ‎<a href=\"?q=%23%D8%A7%D9%85%D9%86_%D8%A7%D9%81%D8%B2%D8%A7%D8%B1_%DA%AF%D8%B3%D8%AA%D8%B1\">#امن_افزار_گستر</a> هستش که به شغل جا*کشی فیلترینگ و محدودیت اینترنت رو بیارن. این پایین ۲۰ تا از نسل جدید زندانبان های اینترنت در ایران رو براتون جمع کردم. به این هزار پدر ها رحم نکنید، معروفشون کنید تو در و همسایه و فامیل.<br><br><br><a href=\"?q=%23DigitalBlackoutIran\">#DigitalBlackoutIran</a><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
-    "date": "2026-04-20T09:43:02+00:00",
-    "images": [
-      "media/fcf67d7fc8bb9d7de7b9266b99070459.jpg"
-    ],
-    "files": [],
-    "link": "https://t.me/dirty_kids/388258",
-    "timestamp": 1776678182000
-  },
-  {
-    "id": "newscenter/62079",
-    "channel": "newscenter",
-    "text": "🔴 پزشکیان: در عین ایستادگی در برابر ظلم و زیاده‌خواهی، باید توجه داشت که ادامه درگیری به نفع هیچ‌کس نیست؛ نه برای ما، نه برای طرف مقابل و نه برای آینده منطقه و نسل‌های پیش‌رو. هر میزان که بتوان مسائل را با منطق و در فضایی آرام مدیریت کرد، به نفع همگان خواهد بود.✅ @newscenter",
-    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> پزشکیان: در عین ایستادگی در برابر ظلم و زیاده‌خواهی، <b>باید توجه داشت که ادامه درگیری به نفع هیچ‌کس نیست؛ نه برای ما، نه برای طرف مقابل و نه برای آینده منطقه و نسل‌های پیش‌رو</b>. هر میزان که بتوان مسائل را با منطق و در فضایی آرام مدیریت کرد، به نفع همگان خواهد بود.<br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
-    "date": "2026-04-20T09:42:43+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/newscenter/62079",
-    "timestamp": 1776678163000
-  },
-  {
-    "id": "pm_afshaa/89297",
-    "channel": "pm_afshaa",
-    "text": "ایسنا : ایران پیشنهاد آمریکا رو که از طریق پاکستان منتقل شده، داره بررسی می‌کنه💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
-    "html": "ایسنا : ایران پیشنهاد آمریکا رو که از طریق پاکستان منتقل شده، داره بررسی می‌کنه<br><br><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
-    "date": "2026-04-20T09:36:26+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/pm_afshaa/89297",
-    "timestamp": 1776677786000
-  },
-  {
-    "id": "newscenter/62078",
-    "channel": "newscenter",
-    "text": "🔴 بقایی: در حال بررسی پیشنهاد آمریکا هستیم🔻سخنگوی وزارت امور خارجه: طرح پیشنهادی آمریکا که در جریان سفر فرمانده ارتش پاکستان به ایران، به تهران منتقل شد در حال بررسی است.🔻مسائلی که در مورد جزئیات پیشنهادها در رسانه‌ها مطرح می‌شود قابل تایید نیست✅ @newscenter",
-    "html": "<b><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> بقایی: در حال بررسی پیشنهاد آمریکا هستیم</b><br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')\"><b>🔻</b></i>سخنگوی وزارت امور خارجه: طرح پیشنهادی آمریکا که در جریان سفر فرمانده ارتش پاکستان به ایران، به تهران منتقل شد در حال بررسی است.<br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')\"><b>🔻</b></i>مسائلی که در مورد جزئیات پیشنهادها در رسانه‌ها مطرح می‌شود قابل تایید نیست<br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
-    "date": "2026-04-20T09:34:36+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/newscenter/62078",
-    "timestamp": 1776677676000
   }
 ]
