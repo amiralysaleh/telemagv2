@@ -1,5 +1,314 @@
 [
   {
+    "id": "SparrK_VPN/4368",
+    "channel": "SparrK_VPN",
+    "text": "V2+Psiphon 🖥🗿 یا (MahsaNG){  \"remarks\": \"@Sparrk_VPN 🍋‍🟩\",  \"log\": {    \"access\": \"\",    \"error\": \"\",    \"loglevel\": \"warning\",    \"dnsLog\": false  },  \"inbounds\": [    {      \"tag\": \"in_proxy\",      \"port\": 10808,      \"protocol\": \"socks\",      \"listen\": \"127.0.0.1\",      \"settings\": {        \"auth\": \"noauth\",        \"udp\": true,        \"userLevel\": 8      },      \"sniffing\": {        \"enabled\": true,        \"destOverride\": [          \"http\",          \"tls\"        ]      }    },    {      \"tag\": \"http-in\",      \"port\": 10808,      \"listen\": \"::\",      \"protocol\": \"http\"    }  ],  \"outbounds\": [    {      \"tag\": \"proxy\",      \"protocol\": \"vless\",      \"settings\": {        \"vnext\": [          {            \"address\": \"104.16.80.73\",            \"port\": 2083,            \"users\": [              {                \"id\": \"89b3cbba-e6ac-485a-9481-976a0415eab9\",                \"level\": 8,                \"encryption\": \"none\"              }            ]          }        ]      },      \"streamSettings\": {        \"network\": \"ws\",        \"security\": \"tls\",        \"wsSettings\": {          \"path\": \"/%252F\",          \"headers\": {            \"Host\": \"cIAllO-EGB.pAGES.dev\"          }        },        \"tlsSettings\": {          \"allowInsecure\": true,          \"serverName\": \"cIAllO-EGB.pAGES.dev\",          \"alpn\": [            \"http/1.1\"          ],          \"fingerprint\": \"ios\",          \"show\": false        },        \"sockopt\": {          \"dialerProxy\": \"fragment\",          \"tcpKeepAliveIdle\": 100,          \"tcpNoDelay\": true        }      },      \"mux\": {        \"enabled\": false,        \"concurrency\": 8      }    },    {      \"tag\": \"fragment\",      \"protocol\": \"freedom\",      \"settings\": {        \"domainStrategy\": \"AsIs\",        \"fragment\": {          \"packets\": \"tlshello\",          \"length\": \"100-200\",          \"interval\": \"10-20\"        }      },      \"streamSettings\": {        \"sockopt\": {          \"tcpKeepAliveIdle\": 100,          \"tcpNoDelay\": true        }      }    },    {      \"tag\": \"direct\",      \"protocol\": \"freedom\",      \"settings\": {        \"domainStrategy\": \"UseIP\"      }    },    {      \"tag\": \"blackhole\",      \"protocol\": \"blackhole\",      \"settings\": {}    }  ],  \"dns\": {    \"servers\": [      \"1.1.1.1\",      \"8.8.8.8\"    ]  },  \"routing\": {    \"domainStrategy\": \"IPIfNonMatch\",    \"rules\": [],    \"balancers\": []  }}JOIN : @Sparrk_VPN ✅",
+    "html": "V2+Psiphon <tg-emoji emoji-id=\"5778635556237873102\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F96A5.png')\"><b>🖥</b></i></tg-emoji><tg-emoji emoji-id=\"5929366497188123003\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F97BF.png')\"><b>🗿</b></i></tg-emoji> یا (<b>MahsaNG</b>)<br><blockquote expandable=\"\"><code>{<br>  \"remarks\": \"@Sparrk_VPN <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F8D8BE2808DF09F9FA9.png')\"><b>🍋‍🟩</b></i>\",<br>  \"log\": {<br>    \"access\": \"\",<br>    \"error\": \"\",<br>    \"loglevel\": \"warning\",<br>    \"dnsLog\": false<br>  },<br>  \"inbounds\": [<br>    {<br>      \"tag\": \"in_proxy\",<br>      \"port\": 10808,<br>      \"protocol\": \"socks\",<br>      \"listen\": \"127.0.0.1\",<br>      \"settings\": {<br>        \"auth\": \"noauth\",<br>        \"udp\": true,<br>        \"userLevel\": 8<br>      },<br>      \"sniffing\": {<br>        \"enabled\": true,<br>        \"destOverride\": [<br>          \"http\",<br>          \"tls\"<br>        ]<br>      }<br>    },<br>    {<br>      \"tag\": \"http-in\",<br>      \"port\": 10808,<br>      \"listen\": \"::\",<br>      \"protocol\": \"http\"<br>    }<br>  ],<br>  \"outbounds\": [<br>    {<br>      \"tag\": \"proxy\",<br>      \"protocol\": \"vless\",<br>      \"settings\": {<br>        \"vnext\": [<br>          {<br>            \"address\": \"104.16.80.73\",<br>            \"port\": 2083,<br>            \"users\": [<br>              {<br>                \"id\": \"89b3cbba-e6ac-485a-9481-976a0415eab9\",<br>                \"level\": 8,<br>                \"encryption\": \"none\"<br>              }<br>            ]<br>          }<br>        ]<br>      },<br>      \"streamSettings\": {<br>        \"network\": \"ws\",<br>        \"security\": \"tls\",<br>        \"wsSettings\": {<br>          \"path\": \"/%252F\",<br>          \"headers\": {<br>            \"Host\": \"cIAllO-EGB.pAGES.dev\"<br>          }<br>        },<br>        \"tlsSettings\": {<br>          \"allowInsecure\": true,<br>          \"serverName\": \"cIAllO-EGB.pAGES.dev\",<br>          \"alpn\": [<br>            \"http/1.1\"<br>          ],<br>          \"fingerprint\": \"ios\",<br>          \"show\": false<br>        },<br>        \"sockopt\": {<br>          \"dialerProxy\": \"fragment\",<br>          \"tcpKeepAliveIdle\": 100,<br>          \"tcpNoDelay\": true<br>        }<br>      },<br>      \"mux\": {<br>        \"enabled\": false,<br>        \"concurrency\": 8<br>      }<br>    },<br>    {<br>      \"tag\": \"fragment\",<br>      \"protocol\": \"freedom\",<br>      \"settings\": {<br>        \"domainStrategy\": \"AsIs\",<br>        \"fragment\": {<br>          \"packets\": \"tlshello\",<br>          \"length\": \"100-200\",<br>          \"interval\": \"10-20\"<br>        }<br>      },<br>      \"streamSettings\": {<br>        \"sockopt\": {<br>          \"tcpKeepAliveIdle\": 100,<br>          \"tcpNoDelay\": true<br>        }<br>      }<br>    },<br>    {<br>      \"tag\": \"direct\",<br>      \"protocol\": \"freedom\",<br>      \"settings\": {<br>        \"domainStrategy\": \"UseIP\"<br>      }<br>    },<br>    {<br>      \"tag\": \"blackhole\",<br>      \"protocol\": \"blackhole\",<br>      \"settings\": {}<br>    }<br>  ],<br>  \"dns\": {<br>    \"servers\": [<br>      \"1.1.1.1\",<br>      \"8.8.8.8\"<br>    ]<br>  },<br>  \"routing\": {<br>    \"domainStrategy\": \"IPIfNonMatch\",<br>    \"rules\": [],<br>    \"balancers\": []<br>  }<br>}</code></blockquote><br><br><blockquote>JOIN : <a href=\"https://t.me/Sparrk_VPN\" target=\"_blank\">@Sparrk_VPN</a> <tg-emoji emoji-id=\"5199628545457923796\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji></blockquote>",
+    "date": "2026-05-26T07:41:12+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/SparrK_VPN/4368",
+    "timestamp": 1779781272000
+  },
+  {
+    "id": "Dirty_Kids/390213",
+    "channel": "dirty_kids",
+    "text": "میگه پرچم رو به دخترهاى بى حجاب نميدم پرچم نجس ميشه، به بچم ياد دادم شعار بده مرگ بر ترامپ و آمريكا بچه با خجالت شعار ميدهبدون تعارف و بی ریا بگو بچت رو هم دارى خای ه مال بار ميارى و از اونورم جانى.@Dirty_Kids 👻",
+    "html": "میگه پرچم رو به دخترهاى بى حجاب نميدم پرچم نجس ميشه، به بچم ياد دادم شعار بده مرگ بر ترامپ و آمريكا بچه با خجالت شعار ميده<br>بدون تعارف و بی ریا بگو بچت رو هم دارى خای ه مال بار ميارى و از اونورم جانى.<br><br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
+    "date": "2026-05-26T07:41:03+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/dirty_kids/390213",
+    "timestamp": 1779781263000
+  },
+  {
+    "id": "Dirty_Kids/390212",
+    "channel": "dirty_kids",
+    "text": "‏کاش این فصل تموم نشه واقعا تو این وضعیت اقتصادی و شرایط کشور فقط طبیعت می‌تونه یکم حالمونو خوب کنهطبیعت هورامان@Dirty_Kids 👻",
+    "html": "‏کاش این فصل تموم نشه واقعا تو این وضعیت اقتصادی و شرایط کشور فقط طبیعت می‌تونه یکم حالمونو خوب کنه<br>طبیعت هورامان<br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
+    "date": "2026-05-26T07:41:02+00:00",
+    "images": [
+      "media/44ffb6d9ebc9ec0374b1b3e61b632d8f.jpg"
+    ],
+    "files": [],
+    "link": "https://t.me/dirty_kids/390212",
+    "timestamp": 1779781262000
+  },
+  {
+    "id": "pm_afshaa/91517",
+    "channel": "pm_afshaa",
+    "text": "کانال 13 اسرائیل: جلسه کابینه داخلی امروز در پی تشدید تنش‌ها در لبنان و توافق احتمالی با ایران برگزار می‌شود💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
+    "html": "کانال 13 اسرائیل: جلسه کابینه داخلی امروز در پی تشدید تنش‌ها در لبنان و توافق احتمالی با ایران برگزار می‌شود<br><br><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
+    "date": "2026-05-26T06:53:36+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/pm_afshaa/91517",
+    "timestamp": 1779778416000
+  },
+  {
+    "id": "Break_The_Barriers/1670",
+    "channel": "Break_the_barriers",
+    "text": "انتشار اطلاعات غلط و گمراه‌کننده در این شرایط، باعث ایجاد ناامیدی و دل‌سردی می‌شه.به‌نظرم رویه درستی نیست.",
+    "html": "انتشار اطلاعات غلط و گمراه‌کننده در این شرایط، باعث ایجاد ناامیدی و دل‌سردی می‌شه.<br><br>به‌نظرم رویه درستی نیست.",
+    "date": "2026-05-26T06:51:48+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/Break_the_barriers/1670",
+    "timestamp": 1779778308000
+  },
+  {
+    "id": "pm_afshaa/91516",
+    "channel": "pm_afshaa",
+    "text": "سیتنا: آزاد سازی اینترنت به تعویق افتاد💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
+    "html": "سیتنا: آزاد سازی اینترنت به تعویق افتاد<br><br><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
+    "date": "2026-05-26T06:48:56+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/pm_afshaa/91516",
+    "timestamp": 1779778136000
+  },
+  {
+    "id": "worldsmoments/96242",
+    "channel": "worldsmoments",
+    "text": "💢بازگشایی اینترنت مرحله ای شده و الان mail.google.com ( سایت Gmail) باز شد.",
+    "html": "<b><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A2.png')\"><b>💢</b></i>بازگشایی اینترنت مرحله ای شده و الان </b><a href=\"http://mail.google.com/\" target=\"_blank\" rel=\"noopener\"><b>mail.google.com</b></a><b> ( سایت Gmail) باز شد.</b>",
+    "date": "2026-05-26T06:47:30+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/worldsmoments/96242",
+    "timestamp": 1779778050000
+  },
+  {
+    "id": "newscenter/63793",
+    "channel": "newscenter",
+    "text": "روز ۸۸ قطعی اینترنت تو کشور.✅ @newscenter",
+    "html": "روز ۸۸ قطعی اینترنت تو کشور.<br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
+    "date": "2026-05-26T06:40:13+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/newscenter/63793",
+    "timestamp": 1779777613000
+  },
+  {
+    "id": "worldsmoments/96241",
+    "channel": "worldsmoments",
+    "text": "❌  یک عضو ستاد ساماندهی فضای مجازی: اینترنت تا ساعاتی دیگر وصل می‌شود.من بعد از اینکه ۵ تومن پول وپن دادم",
+    "html": "<tg-emoji emoji-id=\"5368815699613459333\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29D8C.png')\"><b>❌</b></i></tg-emoji>  یک عضو ستاد ساماندهی فضای مجازی: اینترنت تا ساعاتی دیگر وصل می‌شود.",
+    "date": "2026-05-26T06:40:08+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/worldsmoments/96241",
+    "timestamp": 1779777608000
+  },
+  {
+    "id": "worldsmoments/96240",
+    "channel": "worldsmoments",
+    "text": "❌  یک عضو ستاد ساماندهی فضای مجازی: اینترنت تا ساعاتی دیگر وصل می‌شود.",
+    "html": "<tg-emoji emoji-id=\"5368815699613459333\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29D8C.png')\"><b>❌</b></i></tg-emoji>  یک عضو ستاد ساماندهی فضای مجازی: اینترنت تا ساعاتی دیگر وصل می‌شود.",
+    "date": "2026-05-26T06:39:33+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/worldsmoments/96240",
+    "timestamp": 1779777573000
+  },
+  {
+    "id": "worldsmoments/96239",
+    "channel": "worldsmoments",
+    "text": "صفحه اینترنت پرو از سایت همراه اول حذف شد",
+    "html": "صفحه اینترنت پرو از سایت همراه اول حذف شد",
+    "date": "2026-05-26T06:39:05+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/worldsmoments/96239",
+    "timestamp": 1779777545000
+  },
+  {
+    "id": "pm_afshaa/91515",
+    "channel": "pm_afshaa",
+    "text": "کانال 12 اسراییل: مجتبی خامنه‌ای هنوز توافقات شکل‌گرفته را تایید نکرده 💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
+    "html": "کانال 12 اسراییل: مجتبی خامنه‌ای هنوز توافقات شکل‌گرفته را تایید نکرده<br><br><blockquote> <tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
+    "date": "2026-05-26T06:32:52+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/pm_afshaa/91515",
+    "timestamp": 1779777172000
+  },
+  {
+    "id": "pm_afshaa/91514",
+    "channel": "pm_afshaa",
+    "text": "از سپاه فقط یه پا مونده که اونم رو هواست هر کی میاد میکنه توش میره😂",
+    "html": "از سپاه فقط یه پا مونده که اونم رو هواست هر کی میاد میکنه توش میره<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9882.png')\"><b>😂</b></i>",
+    "date": "2026-05-26T06:19:52+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/pm_afshaa/91514",
+    "timestamp": 1779776392000
+  },
+  {
+    "id": "newscenter/63792",
+    "channel": "newscenter",
+    "text": "وزیر نفت: بنزین گران نمی‌شود✅ @newscenter",
+    "html": "<b>وزیر نفت: بنزین گران نمی‌شود<br><br></b><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
+    "date": "2026-05-26T06:12:03+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/newscenter/63792",
+    "timestamp": 1779775923000
+  },
+  {
+    "id": "SparrK_VPN/4367",
+    "channel": "SparrK_VPN",
+    "text": "V2+Psiphon 🖥🗿 یا (MahsaNG){  \"remarks\": \"@Sparrk_VPN\",  \"log\": {    \"access\": \"\",    \"error\": \"\",    \"loglevel\": \"info\",    \"dnsLog\": false  },  \"inbounds\": [    {      \"tag\": \"in_proxy\",      \"port\": 10808,      \"protocol\": \"socks\",      \"listen\": \"127.0.0.1\",      \"settings\": {        \"auth\": \"noauth\",        \"udp\": true,        \"userLevel\": 8      },      \"sniffing\": {        \"enabled\": false      }    },    {      \"tag\": \"http-in\",      \"port\": 10808,      \"listen\": \"::\",      \"protocol\": \"http\"    }  ],  \"outbounds\": [    {      \"tag\": \"proxy\",      \"protocol\": \"vless\",      \"settings\": {        \"vnext\": [          {            \"address\": \"172.64.152.23\",            \"port\": 2053,            \"users\": [              {                \"id\": \"8c4604ef-749c-4b56-adf1-7da405002a21\",                \"encryption\": \"none\",                \"level\": 8,                \"flow\": \"\"              }            ]          }        ]      },      \"streamSettings\": {        \"network\": \"ws\",        \"security\": \"tls\",        \"wsSettings\": {          \"path\": \"/\",          \"headers\": {            \"Host\": \"qyi.fqjd663.ggff.net\"          }        },        \"tlsSettings\": {          \"allowInsecure\": true,          \"serverName\": \"qyi.fqjd663.ggff.net\",          \"alpn\": [            \"http/1.1\"          ],          \"fingerprint\": \"chrome\",          \"show\": false        },        \"sockopt\": {          \"dialerProxy\": \"fragment\",          \"tcpKeepAliveIdle\": 100,          \"tcpNoDelay\": true        }      },      \"mux\": {        \"enabled\": false,        \"concurrency\": 8      }    },    {      \"tag\": \"fragment\",      \"protocol\": \"freedom\",      \"settings\": {        \"domainStrategy\": \"AsIs\",        \"fragment\": {          \"packets\": \"tlshello\",          \"length\": \"100-200\",          \"interval\": \"10-20\"        }      },      \"streamSettings\": {        \"sockopt\": {          \"tcpKeepAliveIdle\": 100,          \"tcpNoDelay\": true        }      }    },    {      \"tag\": \"direct\",      \"protocol\": \"freedom\",      \"settings\": {        \"domainStrategy\": \"UseIp\"      }    },    {      \"tag\": \"blackhole\",      \"protocol\": \"blackhole\",      \"settings\": {}    }  ],  \"dns\": {    \"servers\": [      \"8.8.8.8\"    ]  },  \"routing\": {    \"domainStrategy\": \"UseIp\",    \"rules\": [],    \"balancers\": []  }}JOIN : @Sparrk_VPN ✅",
+    "html": "V2+Psiphon <tg-emoji emoji-id=\"5778635556237873102\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F96A5.png')\"><b>🖥</b></i></tg-emoji><tg-emoji emoji-id=\"5929366497188123003\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F97BF.png')\"><b>🗿</b></i></tg-emoji> یا (<b>MahsaNG</b>)<br><blockquote expandable=\"\"><code>{<br>  \"remarks\": \"@Sparrk_VPN\",<br>  \"log\": {<br>    \"access\": \"\",<br>    \"error\": \"\",<br>    \"loglevel\": \"info\",<br>    \"dnsLog\": false<br>  },<br>  \"inbounds\": [<br>    {<br>      \"tag\": \"in_proxy\",<br>      \"port\": 10808,<br>      \"protocol\": \"socks\",<br>      \"listen\": \"127.0.0.1\",<br>      \"settings\": {<br>        \"auth\": \"noauth\",<br>        \"udp\": true,<br>        \"userLevel\": 8<br>      },<br>      \"sniffing\": {<br>        \"enabled\": false<br>      }<br>    },<br>    {<br>      \"tag\": \"http-in\",<br>      \"port\": 10808,<br>      \"listen\": \"::\",<br>      \"protocol\": \"http\"<br>    }<br>  ],<br>  \"outbounds\": [<br>    {<br>      \"tag\": \"proxy\",<br>      \"protocol\": \"vless\",<br>      \"settings\": {<br>        \"vnext\": [<br>          {<br>            \"address\": \"172.64.152.23\",<br>            \"port\": 2053,<br>            \"users\": [<br>              {<br>                \"id\": \"8c4604ef-749c-4b56-adf1-7da405002a21\",<br>                \"encryption\": \"none\",<br>                \"level\": 8,<br>                \"flow\": \"\"<br>              }<br>            ]<br>          }<br>        ]<br>      },<br>      \"streamSettings\": {<br>        \"network\": \"ws\",<br>        \"security\": \"tls\",<br>        \"wsSettings\": {<br>          \"path\": \"/\",<br>          \"headers\": {<br>            \"Host\": \"qyi.fqjd663.ggff.net\"<br>          }<br>        },<br>        \"tlsSettings\": {<br>          \"allowInsecure\": true,<br>          \"serverName\": \"qyi.fqjd663.ggff.net\",<br>          \"alpn\": [<br>            \"http/1.1\"<br>          ],<br>          \"fingerprint\": \"chrome\",<br>          \"show\": false<br>        },<br>        \"sockopt\": {<br>          \"dialerProxy\": \"fragment\",<br>          \"tcpKeepAliveIdle\": 100,<br>          \"tcpNoDelay\": true<br>        }<br>      },<br>      \"mux\": {<br>        \"enabled\": false,<br>        \"concurrency\": 8<br>      }<br>    },<br>    {<br>      \"tag\": \"fragment\",<br>      \"protocol\": \"freedom\",<br>      \"settings\": {<br>        \"domainStrategy\": \"AsIs\",<br>        \"fragment\": {<br>          \"packets\": \"tlshello\",<br>          \"length\": \"100-200\",<br>          \"interval\": \"10-20\"<br>        }<br>      },<br>      \"streamSettings\": {<br>        \"sockopt\": {<br>          \"tcpKeepAliveIdle\": 100,<br>          \"tcpNoDelay\": true<br>        }<br>      }<br>    },<br>    {<br>      \"tag\": \"direct\",<br>      \"protocol\": \"freedom\",<br>      \"settings\": {<br>        \"domainStrategy\": \"UseIp\"<br>      }<br>    },<br>    {<br>      \"tag\": \"blackhole\",<br>      \"protocol\": \"blackhole\",<br>      \"settings\": {}<br>    }<br>  ],<br>  \"dns\": {<br>    \"servers\": [<br>      \"8.8.8.8\"<br>    ]<br>  },<br>  \"routing\": {<br>    \"domainStrategy\": \"UseIp\",<br>    \"rules\": [],<br>    \"balancers\": []<br>  }<br>}</code></blockquote><br><br><blockquote>JOIN : <a href=\"https://t.me/Sparrk_VPN\" target=\"_blank\">@Sparrk_VPN</a> <tg-emoji emoji-id=\"5199628545457923796\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji></blockquote>",
+    "date": "2026-05-26T06:10:09+00:00",
+    "images": [
+      "media/bdeec7fcbc6e7c70c6e2cb22db763a0b.jpg"
+    ],
+    "files": [],
+    "link": "https://t.me/SparrK_VPN/4367",
+    "timestamp": 1779775809000
+  },
+  {
+    "id": "Break_The_Barriers/1669",
+    "channel": "Break_the_barriers",
+    "text": "",
+    "html": "",
+    "date": "2026-05-26T05:39:23+00:00",
+    "images": [
+      "media/31e0d3033818866d360aed59d696a75b.jpg"
+    ],
+    "files": [],
+    "link": "https://t.me/Break_the_barriers/1669",
+    "timestamp": 1779773963000
+  },
+  {
+    "id": "Dirty_Kids/390210",
+    "channel": "dirty_kids",
+    "text": "این ویدیو واسه سال ۲۰۱۰عهخیلی دوست دارم بدونم این دخترا الان کجان چیکار میکنن...@Dirty_Kids 👻",
+    "html": "این ویدیو واسه سال ۲۰۱۰عه<br>خیلی دوست دارم بدونم این دخترا الان کجان چیکار میکنن...<br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
+    "date": "2026-05-26T05:39:03+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/dirty_kids/390210",
+    "timestamp": 1779773943000
+  },
+  {
+    "id": "Dirty_Kids/390211",
+    "channel": "dirty_kids",
+    "text": "رسما کاباره‌ باز کردن@Dirty_Kids 👻",
+    "html": "رسما کاباره‌ باز کردن<br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
+    "date": "2026-05-26T05:39:03+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/dirty_kids/390211",
+    "timestamp": 1779773943000
+  },
+  {
+    "id": "Break_The_Barriers/1668",
+    "channel": "Break_the_barriers",
+    "text": "خب، از این به بعد یک سرور ١۶ هسته‌ای داریم. 🤩",
+    "html": "خب، از این به بعد یک سرور ١۶ هسته‌ای داریم. <tg-emoji emoji-id=\"5253800186278325174\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')\"><b>🤩</b></i></tg-emoji>",
+    "date": "2026-05-26T05:34:39+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/Break_the_barriers/1668",
+    "timestamp": 1779773679000
+  },
+  {
+    "id": "SparrK_VPN/4366",
+    "channel": "SparrK_VPN",
+    "text": "V2+Psiphon 🖥🗿 یا (MahsaNG){  \"remarks\": \"@Sparrk_VPN\",  \"log\": {    \"access\": \"\",    \"error\": \"\",    \"loglevel\": \"info\",    \"dnsLog\": false  },  \"inbounds\": [    {      \"tag\": \"in_proxy\",      \"port\": 10808,      \"protocol\": \"socks\",      \"listen\": \"127.0.0.1\",      \"settings\": {        \"auth\": \"noauth\",        \"udp\": true,        \"userLevel\": 8      },      \"sniffing\": {        \"enabled\": false      }    },    {      \"tag\": \"http-in\",      \"port\": 10808,      \"listen\": \"::\",      \"protocol\": \"http\"    }  ],  \"outbounds\": [    {      \"tag\": \"proxy\",      \"protocol\": \"trojan\",      \"settings\": {        \"servers\": [          {            \"address\": \"198.202.211.1\",            \"method\": \"chacha20-poly1305\",            \"ota\": false,            \"password\": \"humanity\",            \"port\": 443,            \"level\": 8,            \"flow\": \"\"          }        ]      },      \"streamSettings\": {        \"network\": \"ws\",        \"security\": \"tls\",        \"wsSettings\": {          \"path\": \"/assignment\",          \"headers\": {            \"Host\": \"www.creationlong.org\"          }        },        \"tlsSettings\": {          \"allowInsecure\": false,          \"serverName\": \"www.creationlong.org\",          \"alpn\": [            \"http/1.1\"          ],          \"fingerprint\": \"ios\",          \"show\": false        },        \"sockopt\": {          \"dialerProxy\": \"fragment\",          \"tcpKeepAliveIdle\": 100,          \"tcpNoDelay\": true        }      },      \"mux\": {        \"enabled\": false,        \"concurrency\": 8      }    },    {      \"tag\": \"fragment\",      \"protocol\": \"freedom\",      \"settings\": {        \"domainStrategy\": \"AsIs\",        \"fragment\": {          \"packets\": \"tlshello\",          \"length\": \"100-200\",          \"interval\": \"10-20\"        }      },      \"streamSettings\": {        \"sockopt\": {          \"tcpKeepAliveIdle\": 100,          \"tcpNoDelay\": true        }      }    },    {      \"tag\": \"direct\",      \"protocol\": \"freedom\",      \"settings\": {        \"domainStrategy\": \"UseIp\"      }    },    {      \"tag\": \"blackhole\",      \"protocol\": \"blackhole\",      \"settings\": {}    }  ],  \"dns\": {    \"servers\": [      \"8.8.8.8\"    ]  },  \"routing\": {    \"domainStrategy\": \"UseIp\",    \"rules\": [],    \"balancers\": []  }}creationlongJOIN : @Sparrk_VPN ✅",
+    "html": "V2+Psiphon <tg-emoji emoji-id=\"5778635556237873102\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F96A5.png')\"><b>🖥</b></i></tg-emoji><tg-emoji emoji-id=\"5929366497188123003\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F97BF.png')\"><b>🗿</b></i></tg-emoji> یا (<b>MahsaNG</b>)<br><blockquote expandable=\"\"><code>{<br>  \"remarks\": \"@Sparrk_VPN\",<br>  \"log\": {<br>    \"access\": \"\",<br>    \"error\": \"\",<br>    \"loglevel\": \"info\",<br>    \"dnsLog\": false<br>  },<br>  \"inbounds\": [<br>    {<br>      \"tag\": \"in_proxy\",<br>      \"port\": 10808,<br>      \"protocol\": \"socks\",<br>      \"listen\": \"127.0.0.1\",<br>      \"settings\": {<br>        \"auth\": \"noauth\",<br>        \"udp\": true,<br>        \"userLevel\": 8<br>      },<br>      \"sniffing\": {<br>        \"enabled\": false<br>      }<br>    },<br>    {<br>      \"tag\": \"http-in\",<br>      \"port\": 10808,<br>      \"listen\": \"::\",<br>      \"protocol\": \"http\"<br>    }<br>  ],<br>  \"outbounds\": [<br>    {<br>      \"tag\": \"proxy\",<br>      \"protocol\": \"trojan\",<br>      \"settings\": {<br>        \"servers\": [<br>          {<br>            \"address\": \"198.202.211.1\",<br>            \"method\": \"chacha20-poly1305\",<br>            \"ota\": false,<br>            \"password\": \"humanity\",<br>            \"port\": 443,<br>            \"level\": 8,<br>            \"flow\": \"\"<br>          }<br>        ]<br>      },<br>      \"streamSettings\": {<br>        \"network\": \"ws\",<br>        \"security\": \"tls\",<br>        \"wsSettings\": {<br>          \"path\": \"/assignment\",<br>          \"headers\": {<br>            \"Host\": \"www.creationlong.org\"<br>          }<br>        },<br>        \"tlsSettings\": {<br>          \"allowInsecure\": false,<br>          \"serverName\": \"www.creationlong.org\",<br>          \"alpn\": [<br>            \"http/1.1\"<br>          ],<br>          \"fingerprint\": \"ios\",<br>          \"show\": false<br>        },<br>        \"sockopt\": {<br>          \"dialerProxy\": \"fragment\",<br>          \"tcpKeepAliveIdle\": 100,<br>          \"tcpNoDelay\": true<br>        }<br>      },<br>      \"mux\": {<br>        \"enabled\": false,<br>        \"concurrency\": 8<br>      }<br>    },<br>    {<br>      \"tag\": \"fragment\",<br>      \"protocol\": \"freedom\",<br>      \"settings\": {<br>        \"domainStrategy\": \"AsIs\",<br>        \"fragment\": {<br>          \"packets\": \"tlshello\",<br>          \"length\": \"100-200\",<br>          \"interval\": \"10-20\"<br>        }<br>      },<br>      \"streamSettings\": {<br>        \"sockopt\": {<br>          \"tcpKeepAliveIdle\": 100,<br>          \"tcpNoDelay\": true<br>        }<br>      }<br>    },<br>    {<br>      \"tag\": \"direct\",<br>      \"protocol\": \"freedom\",<br>      \"settings\": {<br>        \"domainStrategy\": \"UseIp\"<br>      }<br>    },<br>    {<br>      \"tag\": \"blackhole\",<br>      \"protocol\": \"blackhole\",<br>      \"settings\": {}<br>    }<br>  ],<br>  \"dns\": {<br>    \"servers\": [<br>      \"8.8.8.8\"<br>    ]<br>  },<br>  \"routing\": {<br>    \"domainStrategy\": \"UseIp\",<br>    \"rules\": [],<br>    \"balancers\": []<br>  }<br>}</code></blockquote><br><br><b>creationlong</b><br><br><blockquote>JOIN : <a href=\"https://t.me/Sparrk_VPN\" target=\"_blank\">@Sparrk_VPN</a> <tg-emoji emoji-id=\"5199628545457923796\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji></blockquote>",
+    "date": "2026-05-26T05:33:06+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/SparrK_VPN/4366",
+    "timestamp": 1779773586000
+  },
+  {
+    "id": "newscenter/63791",
+    "channel": "newscenter",
+    "text": "🔴 زلزله‌ای به بزرگی ۶.۹ ریشتر بعدازظهر دوشنبه منطقه آنتوفاگاستا در شمال شیلی را لرزاند.✅ @newscenter",
+    "html": "<b><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> زلزله‌ای به بزرگی ۶.۹ ریشتر بعدازظهر دوشنبه منطقه آنتوفاگاستا در شمال شیلی را لرزاند.</b><br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
+    "date": "2026-05-26T05:33:01+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/newscenter/63791",
+    "timestamp": 1779773581000
+  },
+  {
+    "id": "Break_The_Barriers/1667",
+    "channel": "Break_the_barriers",
+    "text": "چرا هتزنر سی‌ایکس پنجاه و سه موجود نمی‌کنه؟! ای بابا!موجود کرد،خریدم. 😁",
+    "html": "چرا هتزنر سی‌ایکس پنجاه و سه موجود نمی‌کنه؟! ای بابا!",
+    "date": "2026-05-26T05:20:28+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/Break_the_barriers/1667",
+    "timestamp": 1779772828000
+  },
+  {
+    "id": "pm_afshaa/91513",
+    "channel": "pm_afshaa",
+    "text": "شاهزاده رضا پهلوی : یکی از اعضای پارلمان حتی به من گفت فکر نمی‌کنه ایرانی‌ها آماده دموکراسی باشن- ایرانی‌ها فقط آماده دموکراسی نیستن 40 هزار نفر جونشونو برای اون دادن و نمی‌ذارم این فداکاری بی‌نتیجه بمونه- چه اروپا کنار ما باشه چه رسانه‌هاتون کارشون رو درست انجام بدن چه سیاستمداراتون شجاعت نشون بدن من برای مردم و کشورم می‌جنگم- حتی اگه مجبور باشیم تنها باشیم تا وقتی ایران آزاد بشه می‌جنگیم💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
+    "html": "شاهزاده رضا پهلوی : یکی از اعضای پارلمان حتی به من گفت فکر نمی‌کنه ایرانی‌ها آماده دموکراسی باشن<br><br><blockquote>- ایرانی‌ها فقط آماده دموکراسی نیستن 40 هزار نفر جونشونو برای اون دادن و نمی‌ذارم این فداکاری بی‌نتیجه بمونه<br>- چه اروپا کنار ما باشه چه رسانه‌هاتون کارشون رو درست انجام بدن چه سیاستمداراتون شجاعت نشون بدن من برای مردم و کشورم می‌جنگم<br>- حتی اگه مجبور باشیم تنها باشیم تا وقتی ایران آزاد بشه می‌جنگیم</blockquote><br><br><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji></blockquote><blockquote> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
+    "date": "2026-05-26T05:17:58+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/pm_afshaa/91513",
+    "timestamp": 1779772678000
+  },
+  {
+    "id": "newscenter/63790",
+    "channel": "newscenter",
+    "text": "🔴  توئیت جدید نتانیاهو:دیشب با رئیس‌جمهور ترامپ درباره یادداشت تفاهم برای گشودن تنگه هرمز و مذاکرات آتی برای توافق نهایی درباره برنامه هسته‌ای ایران گفتگو کردم.🔻از رئیس‌جمهور ترامپ به‌خاطر تعهد قاطعش به امنیت اسرائیل، از جمله در جریان عملیات‌های «غرش شیر» و «خشم حماسی» که در آن نیروهای آمریکایی و اسرائیلی شانه به شانه در برابر تهدید ایرانی جنگیدند، عمیقاً ابراز قدردانی کردم.🔻رئیس‌جمهور ترامپ و من توافق کردیم که هر توافق نهایی با ایران باید خطر هسته‌ای را برطرف کند. این به معنای برچیدن تأسیسات غنی‌سازی هسته‌ای ایران و خروج مواد هسته‌ای غنی‌شده از خاک آن کشور است.🔻رئیس‌جمهور ترامپ بار دیگر بر حق اسرائیل برای دفاع از خود در برابر تهدیدها در همه جبهه‌ها، از جمله در لبنان، تأکید کرد.🔻مشارکت میان من و رئیس‌جمهور ترامپ و میان دو کشورمان در میدان نبرد اثبات شده و هرگز قوی‌تر از این نبوده است.🔻سیاست من، همانند سیاست رئیس‌جمهور ترامپ، بدون تغییر باقی می‌ماند: ایران هرگز سلاح هسته‌ای نخواهد داشت.✅ @newscenter",
+    "html": "<b><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i>  توئیت جدید نتانیاهو:<br></b><blockquote expandable=\"\"><b>دیشب با رئیس‌جمهور ترامپ درباره یادداشت تفاهم برای گشودن تنگه هرمز و مذاکرات آتی برای توافق نهایی درباره برنامه هسته‌ای ایران گفتگو کردم.<br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')\"><b>🔻</b></i>از رئیس‌جمهور ترامپ به‌خاطر تعهد قاطعش به امنیت اسرائیل، از جمله در جریان عملیات‌های «غرش شیر» و «خشم حماسی» که در آن نیروهای آمریکایی و اسرائیلی شانه به شانه در برابر تهدید ایرانی جنگیدند، عمیقاً ابراز قدردانی کردم.<br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')\"><b>🔻</b></i>رئیس‌جمهور ترامپ و من توافق کردیم که هر توافق نهایی با ایران باید خطر هسته‌ای را برطرف کند. این به معنای برچیدن تأسیسات غنی‌سازی هسته‌ای ایران و خروج مواد هسته‌ای غنی‌شده از خاک آن کشور است.<br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')\"><b>🔻</b></i>رئیس‌جمهور ترامپ بار دیگر بر حق اسرائیل برای دفاع از خود در برابر تهدیدها در همه جبهه‌ها، از جمله در لبنان، تأکید کرد.<br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')\"><b>🔻</b></i>مشارکت میان من و رئیس‌جمهور ترامپ و میان دو کشورمان در میدان نبرد اثبات شده و هرگز قوی‌تر از این نبوده است.<br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')\"><b>🔻</b></i>سیاست من، همانند سیاست رئیس‌جمهور ترامپ، بدون تغییر باقی می‌ماند: ایران هرگز سلاح هسته‌ای نخواهد داشت.</b></blockquote><br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
+    "date": "2026-05-26T05:04:23+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/newscenter/63790",
+    "timestamp": 1779771863000
+  },
+  {
+    "id": "newscenter/63789",
+    "channel": "newscenter",
+    "text": "🔴 خبرگزاری رویترز گزارش داد که قیمت معاملات آتی نفت خام آمریکا ۵.۵۷ دلار یا ۵.۷ درصد کاهش یافته و به ۹۱.۱۵ دلار در هر بشکه رسیده است، در حالی که معامله‌گران در حال ارزیابی توافق صلح مورد انتظار بین ایالات متحده و ایران هستند.✅ @newscenter",
+    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> خبرگزاری رویترز گزارش داد که قیمت معاملات آتی نفت خام آمریکا ۵.۵۷ دلار یا ۵.۷ درصد کاهش یافته و به ۹۱.۱۵ دلار در هر بشکه رسیده است، در حالی که معامله‌گران در حال ارزیابی توافق صلح مورد انتظار بین ایالات متحده و ایران هستند.<br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
+    "date": "2026-05-26T04:31:01+00:00",
+    "images": [],
+    "files": [],
+    "link": "https://t.me/newscenter/63789",
+    "timestamp": 1779769861000
+  },
+  {
+    "id": "VahidOnline/75721",
+    "channel": "VahidOnline",
+    "text": "با وجود حملات اخیر آمریکا به سامانه‌های موشکی و قایق‌های ایران در خلیج فارس که وضعیت آتش‌بس شکننده را متزلزل‌تر کرده است،‌ مارکو روبیو، وزیر خارجه آمریکا روز سه‌شنبه گفت که توافق با ایران «همچنان امکان‌پذیر است.»او در هند به خبرنگاران گفت: «امروز مذاکراتی در قطر در جریان بود،‌ و باید دید آیا می‌توانیم شاهد پیشرفتی باشیم یا خیر. فکر می‌کنم بخش زیادی از زمان صرف دقت در کلمات و واژه‌های به کار گرفته در متن اسناد می‌شود، بنابراین چند روز طول خواهد کشید.»آقای روبیو افزود: «رئیس‌جمهور تمایل خود را برای انجام این کار ابراز کرده است. او یا به یک توافق خوب دست خواهد یافت یا هیچ توافقی نخواهد کرد.»آقای روبیو به خبرنگاران گفت که تنگه هرمز باید باز باشد.او گفت که آنها به هر حال این مسیر را باز خواهند کرد و افزود: «آنچه در آنجا اتفاق میافتد،‌ غیرقانونی است و باعث بی‌ثباتی برای جهان و غیرقابل قبول است.»@VahidHeadline📡 @VahidOnlineبا وجود حملات اخیر آمریکا به سامانه‌های موشکی و قایق‌های ایران در خلیج فارس که وضعیت آتش‌بس شکننده را متزلزل‌تر کرده است،‌ مارکو روبیو، وزیر خارجه آمریکا روز سه‌شنبه گفت که توافق با ایران «همچنان امکان‌پذیر است.»او در هند به خبرنگاران گفت: «امروز مذاکراتی در قطر در جریان بود،‌ و باید دید آیا می‌توانیم شاهد پیشرفتی باشیم یا خیر. فکر می‌کنم بخش زیادی از زمان صرف دقت در کلمات و واژه‌های به کار گرفته در متن اسناد می‌شود، بنابراین چند روز طول خواهد کشید.»آقای روبیو افزود: «رئیس‌جمهور تمایل خود را برای انجام این کار ابراز کرده است. او یا به یک توافق خوب دست خواهد یافت یا هیچ توافقی نخواهد کرد.»آقای روبیو به خبرنگاران گفت که تنگه هرمز باید باز باشد.او گفت که آنها به هر حال این مسیر را باز خواهند کرد و افزود: «آنچه در آنجا اتفاق میافتد،‌ غیرقانونی است و باعث بی‌ثباتی برای جهان و غیرقابل قبول است.»@VahidHeadline📡 @VahidOnline",
+    "html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\">با وجود حملات اخیر آمریکا به سامانه‌های موشکی و قایق‌های ایران در خلیج فارس که وضعیت آتش‌بس شکننده را متزلزل‌تر کرده است،‌ مارکو روبیو، وزیر خارجه آمریکا روز سه‌شنبه گفت که توافق با ایران «همچنان امکان‌پذیر است.»<br><br>او در هند به خبرنگاران گفت: «امروز مذاکراتی در قطر در جریان بود،‌ و باید دید آیا می‌توانیم شاهد پیشرفتی باشیم یا خیر. فکر می‌کنم بخش زیادی از زمان صرف دقت در کلمات و واژه‌های به کار گرفته در متن اسناد می‌شود، بنابراین چند روز طول خواهد کشید.»<br><br>آقای روبیو افزود: «رئیس‌جمهور تمایل خود را برای انجام این کار ابراز کرده است. او یا به یک توافق خوب دست خواهد یافت یا هیچ توافقی نخواهد کرد.»<br><br>آقای روبیو به خبرنگاران گفت که تنگه هرمز باید باز باشد.<br><br>او گفت که آنها به هر حال این مسیر را باز خواهند کرد و افزود: «آنچه در آنجا اتفاق میافتد،‌ غیرقانونی است و باعث بی‌ثباتی برای جهان و غیرقابل قبول است.»<br>@<a href=\"https://t.me/VahidHeadline/299854\" target=\"_blank\" rel=\"noopener\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\">VahidHeadline</a><br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F93A1.png')\"><b>📡</b></i> <a href=\"https://t.me/VahidOnline\" target=\"_blank\">@VahidOnline</a></div>",
+    "date": "2026-05-26T04:14:30+00:00",
+    "images": [
+      "media/b402e27aeedc5b6b7e5c318ec1c4d19d.jpg",
+      "media/51fc359144168c13f6af537562e06825.jpg"
+    ],
+    "files": [],
+    "link": "https://t.me/VahidOnline/75721",
+    "timestamp": 1779768870000
+  },
+  {
+    "id": "worldsmoments/96237",
+    "channel": "worldsmoments",
+    "text": "بهترین آهنگ پاپ: گلدن، هانتریکس.بهترین موزیك‌ویدیو: نارلی، کتزای.بهترین سوندترك: دیمن هانترز.بهترین آرتیست مرد پاپ: جاستین بیبر.بهترین آرتیست زن پاپ: سابرینا کارپنتر.بهترین آلبوم پاپ: سابرینا کارپنترآلبوم سال: سابرینا کارپنتر Man’s Best Friendشاید باورتون نشه ولی هنوز نگفتن بهترین آرتیست زن کیپاپ کیه.@worldsmomentsبهترین آهنگ پاپ: گلدن، هانتریکس.بهترین موزیك‌ویدیو: نارلی، کتزای.بهترین سوندترك: دیمن هانترز.بهترین آرتیست مرد پاپ: جاستین بیبر.بهترین آرتیست زن پاپ: سابرینا کارپنتر.بهترین آلبوم پاپ: سابرینا کارپنترآلبوم سال: سابرینا کارپنتر Man’s Best Friendشاید باورتون نشه ولی هنوز نگفتن بهترین آرتیست زن کیپاپ کیه.@worldsmoments",
+    "html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\">بهترین آهنگ پاپ: گلدن، هانتریکس.<br>بهترین موزیك‌ویدیو: نارلی، کتزای.<br>بهترین سوندترك: دیمن هانترز.<br>بهترین آرتیست مرد پاپ: جاستین بیبر.<br>بهترین آرتیست زن پاپ: سابرینا کارپنتر.<br>بهترین آلبوم پاپ: سابرینا کارپنتر<br>آلبوم سال: سابرینا کارپنتر Man’s Best Friend<br><blockquote>شاید باورتون نشه ولی هنوز نگفتن بهترین آرتیست زن کیپاپ کیه.</blockquote><br><a href=\"https://t.me/worldsmoments\" target=\"_blank\">@worldsmoments</a></div>",
+    "date": "2026-05-26T03:49:22+00:00",
+    "images": [
+      "media/3af921cadd25c1f72d82b6fde892469f.jpg",
+      "media/0137c9431d2d2e6990bcf065a82beeb6.jpg"
+    ],
+    "files": [],
+    "link": "https://t.me/worldsmoments/96237",
+    "timestamp": 1779767362000
+  },
+  {
     "id": "worldsmoments/96236",
     "channel": "worldsmoments",
     "text": "آرتیست‌هایی که این دهه بیشترین جایزه ama برای بهترین آرتیست سال رو بردن:@worldsmoments",
@@ -5113,369 +5422,5 @@
     "files": [],
     "link": "https://t.me/worldsmoments/96054",
     "timestamp": 1779696050000
-  },
-  {
-    "id": "pm_afshaa/91432",
-    "channel": "pm_afshaa",
-    "text": "وزارت امور خارجه چین امروز در واکنش به مذاکرات بین ایران و ایالات متحده برای رسیدن به توافقی جهت پایان جنگ اعلام کرد که این جنگ اصلاً نباید آغاز می‌شد و نیازی به ادامه آن نیست💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
-    "html": "وزارت امور خارجه چین امروز در واکنش به مذاکرات بین ایران و ایالات متحده برای رسیدن به توافقی جهت پایان جنگ اعلام کرد که این جنگ اصلاً نباید آغاز می‌شد و نیازی به ادامه آن نیست<br><br><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
-    "date": "2026-05-25T07:47:48+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/pm_afshaa/91432",
-    "timestamp": 1779695268000
-  },
-  {
-    "id": "pm_afshaa/91431",
-    "channel": "pm_afshaa",
-    "text": "مشاور وزیر ارتباطات از احتمال دسترسی و اتصال به اینترنت بین‌المللی در هفته آینده خبر داد💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
-    "html": "مشاور وزیر ارتباطات از احتمال دسترسی و اتصال به اینترنت بین‌المللی در هفته آینده خبر داد<br><br><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
-    "date": "2026-05-25T07:44:07+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/pm_afshaa/91431",
-    "timestamp": 1779695047000
-  },
-  {
-    "id": "Dirty_Kids/390121",
-    "channel": "dirty_kids",
-    "text": "بکیرم میگی چی‌کار کنیم الان اگه خواستن بهت بدن تو نکن@Dirty_Kids 👻",
-    "html": "بکیرم میگی چی‌کار کنیم الان <br>اگه خواستن بهت بدن تو نکن<br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
-    "date": "2026-05-25T07:41:02+00:00",
-    "images": [
-      "media/089a8dd08ef761bf300f0b18b18f39b8.jpg"
-    ],
-    "files": [],
-    "link": "https://t.me/dirty_kids/390121",
-    "timestamp": 1779694862000
-  },
-  {
-    "id": "Dirty_Kids/390122",
-    "channel": "dirty_kids",
-    "text": "دیگه نمیتونم تشخیص بدم کی پرستوعه کی کصخل‌مجازیه @Dirty_Kids 👻",
-    "html": "دیگه نمیتونم تشخیص بدم کی پرستوعه کی کصخل‌مجازیه <br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
-    "date": "2026-05-25T07:41:02+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/dirty_kids/390122",
-    "timestamp": 1779694862000
-  },
-  {
-    "id": "Dirty_Kids/390123",
-    "channel": "dirty_kids",
-    "text": "دل یه ایران گرفته@Dirty_Kids 👻",
-    "html": "دل یه ایران گرفته<br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
-    "date": "2026-05-25T07:41:02+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/dirty_kids/390123",
-    "timestamp": 1779694862000
-  },
-  {
-    "id": "worldsmoments/96053",
-    "channel": "worldsmoments",
-    "text": "⭕️ فاکس نیوز: ترامپ یک هفته برای توافق نهایی با ایران به جمهوری اسلامی فرصت داده.",
-    "html": "<tg-emoji emoji-id=\"5765106739967959064\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E2AD95.png')\"><b>⭕️</b></i></tg-emoji> فاکس نیوز: ترامپ یک هفته برای توافق نهایی با ایران به جمهوری اسلامی فرصت داده.",
-    "date": "2026-05-25T07:33:54+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/worldsmoments/96053",
-    "timestamp": 1779694434000
-  },
-  {
-    "id": "newscenter/63727",
-    "channel": "newscenter",
-    "text": "🔴 سخنگوی وزارت خارجه:  تمرکز مذاکرات بر خاتمه جنگ است و در این مرحله درباره جزئیات موضوع هسته‌ای صحبتی نداریم✅ @newscenter",
-    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> سخنگوی وزارت خارجه:  تمرکز مذاکرات بر خاتمه جنگ است و در این مرحله درباره جزئیات موضوع هسته‌ای صحبتی نداریم<br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
-    "date": "2026-05-25T07:20:28+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/newscenter/63727",
-    "timestamp": 1779693628000
-  },
-  {
-    "id": "newscenter/63726",
-    "channel": "newscenter",
-    "text": "رئیس دانشگاه آزاد اسلامی اعلام کرد که درباره حضوری یا مجازی بودن کلاس‌ها و امتحانات تحصیلات تکمیلی، تابع نظر شورای عالی امنیت کشور هستند و امکان برگزاری حضوری دوره‌ها با توجه به شرایط هر استان فراهم است.✅ @newscenter",
-    "html": "رئیس دانشگاه آزاد اسلامی اعلام کرد که درباره حضوری یا مجازی بودن کلاس‌ها و امتحانات تحصیلات تکمیلی، تابع نظر شورای عالی امنیت کشور هستند و امکان برگزاری حضوری دوره‌ها با توجه به شرایط هر استان فراهم است.<br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
-    "date": "2026-05-25T07:19:10+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/newscenter/63726",
-    "timestamp": 1779693550000
-  },
-  {
-    "id": "MatinSenPaii/3418",
-    "channel": "MatinSenPaii",
-    "text": "برای کدنویسی با هوش مصنوعی، به شخصه دیگه Antigravity گوگل رو توصیه نمی‌کنم به خاطر rate limit بسیار پایینش که با چند مرحله تا یک هفته شما رو محدود می‌کنه. حتی برای اشتراک Pro هم صادقه این قضیه.پیشنهادم اینه که اولا اگر در توانتون نیست هزینه بدید، دوتا کار کنید. ۱- از Codex استفاده کنید که کمپانی Open AI توسعه‌اش داده و از مدل GPT 5.3 High برای دیرتر پر شدن rate limit استفاده کنید. مثل آنتی گرویتی هم دردسر تحریم و... نداره. فقط یه vpn می‌خواید که Chatgpt رو باز کنه عملا. اپلیکیشن هم داده برای ویندوز اما به عنوان Extension VsCode هم می‌تونید نصبش کنید. و محدودیتش هم سخاوتمندانه هستش و به صورت هفتگی هم صفر میشه. کما اینکه میتونید از ایمیل‌های متفاوت استفاده کنید و یه گفتگوی یکسان رو باهاش ادامه بدید!۲- وسط کارهاتون هم می‌تونید از خود Ai Studio و مدل Gemini Pro به همراه گزینه‌های Google search و Url context با thinking budget بالا استفاده کنید.اگر هم می‌تونید هزینه بدید، پلن‌های پولی Claude code و یا Cursor رو تهیه کنید. به مدل‌های چینی Kimi هم نگاهی داشته باشید.✉️ t.me/MatinSenPaii",
-    "html": "برای کدنویسی با هوش مصنوعی، به شخصه دیگه Antigravity گوگل رو توصیه نمی‌کنم به خاطر rate limit بسیار پایینش که با چند مرحله تا یک هفته شما رو محدود می‌کنه. حتی برای اشتراک Pro هم صادقه این قضیه.<br>پیشنهادم اینه که اولا اگر در توانتون نیست هزینه بدید، دوتا کار کنید. ۱- از Codex استفاده کنید که کمپانی Open AI توسعه‌اش داده و از مدل GPT 5.3 High برای دیرتر پر شدن rate limit استفاده کنید. مثل آنتی گرویتی هم دردسر تحریم و... نداره. فقط یه vpn می‌خواید که Chatgpt رو باز کنه عملا. اپلیکیشن هم داده برای ویندوز اما به عنوان Extension VsCode هم می‌تونید نصبش کنید. و محدودیتش هم سخاوتمندانه هستش و به صورت هفتگی هم صفر میشه. کما اینکه میتونید از ایمیل‌های متفاوت استفاده کنید و یه گفتگوی یکسان رو باهاش ادامه بدید!<br><br>۲- وسط کارهاتون هم می‌تونید از خود Ai Studio و مدل Gemini Pro به همراه گزینه‌های Google search و Url context با thinking budget بالا استفاده کنید.<br><br>اگر هم می‌تونید هزینه بدید، پلن‌های پولی Claude code و یا Cursor رو تهیه کنید. به مدل‌های چینی Kimi هم نگاهی داشته باشید.<br><br><tg-emoji emoji-id=\"5069150690295677651\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C89.png')\"><b>✉️</b></i></tg-emoji> <a href=\"http://t.me/MatinSenPaii\" target=\"_blank\" rel=\"noopener\">t.me/MatinSenPaii</a>",
-    "date": "2026-05-25T07:05:50+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/MatinSenPaii/3418",
-    "timestamp": 1779692750000
-  },
-  {
-    "id": "pm_afshaa/91430",
-    "channel": "pm_afshaa",
-    "text": "رژیم تروریستی جمهوری اسلامی برای بچه های اکباتان حکم اعدام صادر کردمیلاد آرمون، نوید نجاران، مهدی ایمانی و سید محمدمهدی حسینی به اعدام محکوم شدن💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
-    "html": "رژیم تروریستی جمهوری اسلامی برای بچه های اکباتان حکم اعدام صادر کرد<br><br>میلاد آرمون، نوید نجاران، مهدی ایمانی و سید محمدمهدی حسینی به اعدام محکوم شدن<br><br><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
-    "date": "2026-05-25T06:53:06+00:00",
-    "images": [
-      "media/cfddb9d1d22b59c1e17ef02ebc8065c7.jpg"
-    ],
-    "files": [],
-    "link": "https://t.me/pm_afshaa/91430",
-    "timestamp": 1779691986000
-  },
-  {
-    "id": "newscenter/63725",
-    "channel": "newscenter",
-    "text": "با اکثریت آرا محمدباقر قالیباف رئیس مجلس ماند✅ @newscenter",
-    "html": "<b>با اکثریت آرا محمدباقر قالیباف رئیس مجلس ماند</b><br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
-    "date": "2026-05-25T06:51:19+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/newscenter/63725",
-    "timestamp": 1779691879000
-  },
-  {
-    "id": "newscenter/63724",
-    "channel": "newscenter",
-    "text": "عباس اکبری، یکی دیگر از معترضان بازداشت شده در دی ماه، امروز صبح اعدام شد✅ @newscenter",
-    "html": "عباس اکبری، یکی دیگر از معترضان بازداشت شده در دی ماه، امروز صبح اعدام شد<br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
-    "date": "2026-05-25T06:50:43+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/newscenter/63724",
-    "timestamp": 1779691843000
-  },
-  {
-    "id": "newscenter/63723",
-    "channel": "newscenter",
-    "text": "سخنگوی سازمان هواپیمایی: فرودگاه‌های فعال کشور به عدد ۲۰ رسید✅ @newscenter",
-    "html": "سخنگوی سازمان هواپیمایی: فرودگاه‌های فعال کشور به عدد ۲۰ رسید<br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
-    "date": "2026-05-25T06:42:37+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/newscenter/63723",
-    "timestamp": 1779691357000
-  },
-  {
-    "id": "newscenter/63722",
-    "channel": "newscenter",
-    "text": "مرندی: نه به توافق با ترامپ امیدوار باشید، نه نگران عدم توافق باشید، به مذاکره‌کنندگان فرصت دهید✅ @newscenter",
-    "html": "مرندی: نه به توافق با ترامپ امیدوار باشید، نه نگران عدم توافق باشید، به مذاکره‌کنندگان فرصت دهید<br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
-    "date": "2026-05-25T06:41:05+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/newscenter/63722",
-    "timestamp": 1779691265000
-  },
-  {
-    "id": "Dirty_Kids/390118",
-    "channel": "dirty_kids",
-    "text": "صدا ، تصویر و خواسته مردم ایران سانسورشدنی نیست.@Dirty_Kids 👻",
-    "html": "صدا ، تصویر و خواسته مردم ایران سانسورشدنی نیست.<br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
-    "date": "2026-05-25T06:40:06+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/dirty_kids/390118",
-    "timestamp": 1779691206000
-  },
-  {
-    "id": "Dirty_Kids/390119",
-    "channel": "dirty_kids",
-    "text": "بیا برو بابا قهبه 😂 همه‌ی شما صیغه‌زاده‌ها روهم یه تار از پشمشم نمیشیدانگار فرغون رو با بنز بیای مقایسه کنیاصن فیس گربه‌ای رو ببین 😍@Dirty_Kids 👻",
-    "html": "بیا برو بابا قهبه <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9882.png')\"><b>😂</b></i> همه‌ی شما صیغه‌زاده‌ها روهم یه تار از پشمشم نمیشید<br><br>انگار فرغون رو با بنز بیای مقایسه کنی<br>اصن فیس گربه‌ای رو ببین <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F988D.png')\"><b>😍</b></i><br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
-    "date": "2026-05-25T06:40:06+00:00",
-    "images": [
-      "media/a77e187b416c90381370c71bc7deb04b.jpg"
-    ],
-    "files": [],
-    "link": "https://t.me/dirty_kids/390119",
-    "timestamp": 1779691206000
-  },
-  {
-    "id": "Dirty_Kids/390120",
-    "channel": "dirty_kids",
-    "text": "مراد ویسی: مردم ایران منتظر ترامپ و بی‌بی نبودن رو پای خودشون همیشه وایستادن@Dirty_Kids 👻",
-    "html": "مراد ویسی: مردم ایران منتظر ترامپ و بی‌بی نبودن رو پای خودشون همیشه وایستادن<br><br><br><a href=\"https://t.me/Dirty_Kids\" target=\"_blank\">@Dirty_Kids</a> <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')\"><b>👻</b></i>",
-    "date": "2026-05-25T06:40:06+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/dirty_kids/390120",
-    "timestamp": 1779691206000
-  },
-  {
-    "id": "pm_afshaa/91429",
-    "channel": "pm_afshaa",
-    "text": "نعیم قاسم دبیرکل حزب الله:به خیابان ها بیاید و دولت لبنان را سرنگون کنید💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
-    "html": "نعیم قاسم دبیرکل حزب الله:به خیابان ها بیاید و دولت لبنان را سرنگون کنید<br><br><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
-    "date": "2026-05-25T06:36:02+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/pm_afshaa/91429",
-    "timestamp": 1779690962000
-  },
-  {
-    "id": "persianvpnhub/26164",
-    "channel": "persianvpnhub",
-    "text": "📂 کانفیگ SLIPNET-ENC📍 لوکیشن: نامشخص 🏁📶 پینگ: N/A ms#SLIPNET #VPN🕒 انتشار: 09:48 - 1405/03/04💡 منبع: @slipnet_chatslipnet-enc://AeV6rAMUuKVwI4bdBFjtHH2MesqUV2mekFuSmh/S3onh6hchAjS10mBaQjVPrYt6LMcBE/I9BjGn/58vglL3zj9/QNDN//YTJklL8NMQDePTNFG+WAPjGf90x9H8AbuHfCRfUv5/nCedwu55fQ5fansCBHRNc99jnHvR0+qrdhrR0QEbfyiQvM+EJmSv5Xzp4VgYPzOhdEJm31iSIIKLMjfzUuBELEb+GtMdVecLh1oG4i1uqCW2thwv+z8iJBnj/YkbLrUDXQYKAOJa+qryuTfN0a7uvDDGKiBVjLg46faVDW+8hYgPuI9IOHv3TdeCNahyY4v+XGf25h7We2hQJQ0Z4ZGPgoST+jXF5JxcB04AyuYjLlJZpEIACAB2FAedsJD2G5XIeUPaGswQ7NhT/JEJrOYpy4WRhcOcYeXefC5MP54aqVE9nSLWIFu50L013XKo+zuvJ2uprhBO/5wI7S8Z1QxAd4108lN/LVIBhLgDYB5C4DQk+VeIvpED4THALSlWnsEUEC86ZZpYUnHmA/Gpk2eXdmmRrP01Sj5eVYDOMD0gHX+oBn82jB6k+1pK7UZPlXc9GhawPNUmyiWvubZJ1ld1oAnW+Tz8FvlYCYy4TR2OfjFML2GxY9pdjJR5s/bj9YJTHA2C4JB3SSMs0WERs4Ngm5cjwxggEAkapDgxZe70uEdx0eeFpYgtL2FLFQQZlbM5NfF3RQycjnVbonBTwIQdOhWKbNzgXOd2viTzA5Fbx+focAL2y/O0FIuFahaSi0DFWmqbIKvrGpNzPmtxfQN5Jgg=",
-    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9382.png')\"><b>📂</b></i> کانفیگ SLIPNET-ENC<br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F938D.png')\"><b>📍</b></i> لوکیشن: نامشخص <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F8F81.png')\"><b>🏁</b></i><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')\"><b>📶</b></i> پینگ: N/A ms<br><br><a href=\"?q=%23SLIPNET\">#SLIPNET</a> <a href=\"?q=%23VPN\">#VPN</a><br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9592.png')\"><b>🕒</b></i> انتشار: 09:48 - 1405/03/04<br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A1.png')\"><b>💡</b></i> منبع: <a href=\"https://t.me/slipnet_chat\" target=\"_blank\">@slipnet_chat</a><br><br><pre>slipnet-enc://AeV6rAMUuKVwI4bdBFjtHH2MesqUV2mekFuSmh/S3onh6hchAjS10mBaQjVPrYt6LMcBE/I9BjGn/58vglL3zj9/QNDN//YTJklL8NMQDePTNFG+WAPjGf90x9H8AbuHfCRfUv5/nCedwu55fQ5fansCBHRNc99jnHvR0+qrdhrR0QEbfyiQvM+EJmSv5Xzp4VgYPzOhdEJm31iSIIKLMjfzUuBELEb+GtMdVecLh1oG4i1uqCW2thwv+z8iJBnj/YkbLrUDXQYKAOJa+qryuTfN0a7uvDDGKiBVjLg46faVDW+8hYgPuI9IOHv3TdeCNahyY4v+XGf25h7We2hQJQ0Z4ZGPgoST+jXF5JxcB04AyuYjLlJZpEIACAB2FAedsJD2G5XIeUPaGswQ7NhT/JEJrOYpy4WRhcOcYeXefC5MP54aqVE9nSLWIFu50L013XKo+zuvJ2uprhBO/5wI7S8Z1QxAd4108lN/LVIBhLgDYB5C4DQk+VeIvpED4THALSlWnsEUEC86ZZpYUnHmA/Gpk2eXdmmRrP01Sj5eVYDOMD0gHX+oBn82jB6k+1pK7UZPlXc9GhawPNUmyiWvubZJ1ld1oAnW+Tz8FvlYCYy4TR2OfjFML2GxY9pdjJR5s/bj9YJTHA2C4JB3SSMs0WERs4Ngm5cjwxggEAkapDgxZe70uEdx0eeFpYgtL2FLFQQZlbM5NfF3RQycjnVbonBTwIQdOhWKbNzgXOd2viTzA5Fbx+focAL2y/O0FIuFahaSi0DFWmqbIKvrGpNzPmtxfQN5Jgg=</pre>",
-    "date": "2026-05-25T06:29:56+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/persianvpnhub/26164",
-    "timestamp": 1779690596000
-  },
-  {
-    "id": "persianvpnhub/26163",
-    "channel": "persianvpnhub",
-    "text": "📂 کانفیگ MTPROTO📍 لوکیشن: فنلاند 🇫🇮📶 پینگ: 118ms#Proxy #MTProto🕒 انتشار: 07:17 - 1405/03/04💡 منبع: @InfoTech_VKtg://proxy?server=77.42.123.21&port=443&secret=dd104462821249bd7ac519130220c25d09",
-    "html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9382.png')\"><b>📂</b></i> کانفیگ MTPROTO<br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F938D.png')\"><b>📍</b></i> لوکیشن: فنلاند <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')\"><b>🇫🇮</b></i><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')\"><b>📶</b></i> پینگ: 118ms<br><br><a href=\"?q=%23Proxy\">#Proxy</a> <a href=\"?q=%23MTProto\">#MTProto</a><br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9592.png')\"><b>🕒</b></i> انتشار: 07:17 - 1405/03/04<br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A1.png')\"><b>💡</b></i> منبع: <a href=\"https://t.me/InfoTech_VK\" target=\"_blank\">@InfoTech_VK</a><br><br><pre>tg://proxy?server=77.42.123.21&amp;port=443&amp;secret=dd104462821249bd7ac519130220c25d09</pre>",
-    "date": "2026-05-25T06:29:52+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/persianvpnhub/26163",
-    "timestamp": 1779690592000
-  },
-  {
-    "id": "pm_afshaa/91428",
-    "channel": "pm_afshaa",
-    "text": "🔴نیویورک پست : ترامپ نظر خود را تغییر داده و احتمال توافق اکنون به طور قابل توجهی کاهش یافته است؛ تماس ترامپ با نتانیاهو تأثیر بسیار زیادی داشته💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
-    "html": "<tg-emoji emoji-id=\"6044112265102235520\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i></tg-emoji>نیویورک پست : ترامپ نظر خود را تغییر داده و احتمال توافق اکنون به طور قابل توجهی کاهش یافته است؛ تماس ترامپ با نتانیاهو تأثیر بسیار زیادی داشته<br><br><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
-    "date": "2026-05-25T06:19:14+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/pm_afshaa/91428",
-    "timestamp": 1779689954000
-  },
-  {
-    "id": "pm_afshaa/91427",
-    "channel": "pm_afshaa",
-    "text": "عباس اکبری فیض آبادی از معترضین دی ماه در اصفهان امروز با اذان صبح توسط جمهوری اسلامی اعدام شد💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
-    "html": "عباس اکبری فیض آبادی از معترضین دی ماه در اصفهان امروز با اذان صبح توسط جمهوری اسلامی اعدام شد<br><br><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
-    "date": "2026-05-25T06:03:18+00:00",
-    "images": [
-      "media/b8ea86050aeba07dd2f642d5a5304c68.jpg"
-    ],
-    "files": [],
-    "link": "https://t.me/pm_afshaa/91427",
-    "timestamp": 1779688998000
-  },
-  {
-    "id": "SparrK_VPN/4308",
-    "channel": "SparrK_VPN",
-    "text": "😴",
-    "html": "<tg-emoji emoji-id=\"5764915966110604181\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F98B4.png')\"><b>😴</b></i></tg-emoji>",
-    "date": "2026-05-25T05:58:38+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/SparrK_VPN/4308",
-    "timestamp": 1779688718000
-  },
-  {
-    "id": "SparrK_VPN/4307",
-    "channel": "SparrK_VPN",
-    "text": "SlipNet 🕊VayDNS 🏎slipnet-enc://AeV6rAMUuKVwI4bdBFjtHH2MesqUV2mekFuSmh/S3onh6hchAjS10mBaQjVPrYt6LMcBE/I9BjGn/58vglL3zj9/QNDN//YTJklL8NMQDePTNFG+WAPjGf90x9H8AbuHfCRfUv5/nCedwu55fQ5fansCBHRNc99jnHvR0+qrdhrR0QEbfyiQvM+EJmSv5Xzp4VgYPzOhdEJm31iSIIKLMjfzUuBELEb+GtMdVecLh1oG4i1uqCW2thwv+z8iJBnj/YkbLrUDXQYKAOJa+qryuTfN0a7uvDDGKiBVjLg46faVDW+8hYgPuI9IOHv3TdeCNahyY4v+XGf25h7We2hQJQ0Z4ZGPgoST+jXF5JxcB04AyuYjLlJZpEIACAB2FAedsJD2G5XIeUPaGswQ7NhT/JEJrOYpy4WRhcOcYeXefC5MP54aqVE9nSLWIFu50L013XKo+zuvJ2uprhBO/5wI7S8Z1QxAd4108lN/LVIBhLgDYB5C4DQk+VeIvpED4THALSlWnsEUEC86ZZpYUnHmA/Gpk2eXdmmRrP01Sj5eVYDOMD0gHX+oBn82jB6k+1pK7UZPlXc9GhawPNUmyiWvubZJ1ld1oAnW+Tz8FvlYCYy4TR2OfjFML2GxY9pdjJR5s/bj9YJTHA2C4JB3SSMs0WERs4Ngm5cjwxggEAkapDgxZe70uEdx0eeFpYgtL2FLFQQZlbM5NfF3RQycjnVbonBTwIQdOhWKbNzgXOd2viTzA5Fbx+focAL2y/O0FIuFahaSi0DFWmqbIKvrGpNzPmtxfQN5Jgg=MTU : 1500Max Channels : 64JOIN : @Sparrk_VPN ✅",
-    "html": "SlipNet <tg-emoji emoji-id=\"5931710187827110507\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F958A.png')\"><b>🕊</b></i></tg-emoji><br>VayDNS <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F8F8E.png')\"><b>🏎</b></i><br><blockquote expandable=\"\"><code>slipnet-enc://AeV6rAMUuKVwI4bdBFjtHH2MesqUV2mekFuSmh/S3onh6hchAjS10mBaQjVPrYt6LMcBE/I9BjGn/58vglL3zj9/QNDN//YTJklL8NMQDePTNFG+WAPjGf90x9H8AbuHfCRfUv5/nCedwu55fQ5fansCBHRNc99jnHvR0+qrdhrR0QEbfyiQvM+EJmSv5Xzp4VgYPzOhdEJm31iSIIKLMjfzUuBELEb+GtMdVecLh1oG4i1uqCW2thwv+z8iJBnj/YkbLrUDXQYKAOJa+qryuTfN0a7uvDDGKiBVjLg46faVDW+8hYgPuI9IOHv3TdeCNahyY4v+XGf25h7We2hQJQ0Z4ZGPgoST+jXF5JxcB04AyuYjLlJZpEIACAB2FAedsJD2G5XIeUPaGswQ7NhT/JEJrOYpy4WRhcOcYeXefC5MP54aqVE9nSLWIFu50L013XKo+zuvJ2uprhBO/5wI7S8Z1QxAd4108lN/LVIBhLgDYB5C4DQk+VeIvpED4THALSlWnsEUEC86ZZpYUnHmA/Gpk2eXdmmRrP01Sj5eVYDOMD0gHX+oBn82jB6k+1pK7UZPlXc9GhawPNUmyiWvubZJ1ld1oAnW+Tz8FvlYCYy4TR2OfjFML2GxY9pdjJR5s/bj9YJTHA2C4JB3SSMs0WERs4Ngm5cjwxggEAkapDgxZe70uEdx0eeFpYgtL2FLFQQZlbM5NfF3RQycjnVbonBTwIQdOhWKbNzgXOd2viTzA5Fbx+focAL2y/O0FIuFahaSi0DFWmqbIKvrGpNzPmtxfQN5Jgg=</code></blockquote><br><br>MTU : 1500<br>Max Channels : 64<br><blockquote>JOIN : <a href=\"https://t.me/Sparrk_VPN\" target=\"_blank\">@Sparrk_VPN</a> <tg-emoji emoji-id=\"5199628545457923796\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji></blockquote>",
-    "date": "2026-05-25T05:56:51+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/SparrK_VPN/4307",
-    "timestamp": 1779688611000
-  },
-  {
-    "id": "VahidOnline/75695",
-    "channel": "VahidOnline",
-    "text": "وزیر خارجه ایالات متحده، روز دوشنبه چهارم خرداد گفت که واشینگتن در مذاکرات جاری خود با ایران، «هر فرصتی برای موفقیت» به دیپلماسی خواهد داد.مارکو روبیو که اکنون در هند به‌سر می‌برد در جمع خبرنگاران گفت که مذاکرات با ایران همچنان «در حال پیشرفت» است و خوش‌بینی محتاطانه‌ای نسبت به توافق احتمالی برای بازگشایی مسیرهای کلیدی کشتیرانی و از سرگیری مذاکرات هسته‌ای ابراز کرد.او که روز گذشته از احتمال توافق با ایران تا پایان روز یک‌شنبه خبر داده بود، گفت: «همه ما باید مطمئن باشیم که یا به یک توافق خوب خواهیم رسید، یا مجبور می‌شویم به شکل دیگری با این مسئله برخورد کنیم. ترجیح ما این است که یک توافق خوب داشته باشیم.»دونالد ترامپ، رئیس‌جمهور آمریکا نیز شامگاه یک‌شنبه در دومین پیام خود درباره روند مذاکرات با ایران اطمینان داد که توافق احتمالی با ایران «خوب و درست» خواهد بود اما هیچ کس درباره محتوای آن اطلاع ندارد.@VahidHeadline📡 @VahidOnline",
-    "html": "وزیر خارجه ایالات متحده، روز دوشنبه چهارم خرداد گفت که واشینگتن در مذاکرات جاری خود با ایران، «هر فرصتی برای موفقیت» به دیپلماسی خواهد داد.<br><br>مارکو روبیو که اکنون در هند به‌سر می‌برد در جمع خبرنگاران گفت که مذاکرات با ایران همچنان «در حال پیشرفت» است و خوش‌بینی محتاطانه‌ای نسبت به توافق احتمالی برای بازگشایی مسیرهای کلیدی کشتیرانی و از سرگیری مذاکرات هسته‌ای ابراز کرد.<br><br>او که روز گذشته از احتمال توافق با ایران تا پایان روز یک‌شنبه خبر داده بود، گفت: «همه ما باید مطمئن باشیم که یا به یک توافق خوب خواهیم رسید، یا مجبور می‌شویم به شکل دیگری با این مسئله برخورد کنیم. ترجیح ما این است که یک توافق خوب داشته باشیم.»<br><br>دونالد ترامپ، رئیس‌جمهور آمریکا نیز شامگاه یک‌شنبه در دومین پیام خود درباره روند مذاکرات با ایران اطمینان داد که توافق احتمالی با ایران «خوب و درست» خواهد بود اما هیچ کس درباره محتوای آن اطلاع ندارد.<br>@<a href=\"https://t.me/VahidHeadline/299686\" target=\"_blank\" rel=\"noopener\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\">VahidHeadline</a><br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F93A1.png')\"><b>📡</b></i> <a href=\"https://t.me/VahidOnline\" target=\"_blank\">@VahidOnline</a>",
-    "date": "2026-05-25T05:56:05+00:00",
-    "images": [
-      "media/12a06aa3f7f908ab761fbf270bc14cc6.jpg"
-    ],
-    "files": [],
-    "link": "https://t.me/VahidOnline/75695",
-    "timestamp": 1779688565000
-  },
-  {
-    "id": "VahidOnline/75694",
-    "channel": "VahidOnline",
-    "text": "خبرگزاری «میزان» رسانه قوه قضاییه جمهوری اسلامی اعلام کرد حکم اعدام «عباس اکبری فیض‌آبادی»، از متهمان پرونده اعتراضات دی‌۱۴۰۴ در شهرستان «نایین» اصفهان، صبح روز دوشنبه ۴خرداد۱۴۰۵ اجرا شده است.«میزان» مدعی شده که عباس اکبری از «لیدرهای مسلح» اعتراضات در نایین بوده و در جریان حمله به فرمانداری این شهر و برخی مراکز حکومتی، به سوی ماموران امنیتی تیراندازی کرده است.@VahidHeadline📡 @VahidOnline",
-    "html": "خبرگزاری «میزان» رسانه قوه قضاییه جمهوری اسلامی اعلام کرد حکم اعدام «عباس اکبری فیض‌آبادی»، از متهمان پرونده اعتراضات دی‌۱۴۰۴ در شهرستان «نایین» اصفهان، صبح روز دوشنبه ۴خرداد۱۴۰۵ اجرا شده است.<br><br>«میزان» مدعی شده که عباس اکبری از «لیدرهای مسلح» اعتراضات در نایین بوده و در جریان حمله به فرمانداری این شهر و برخی مراکز حکومتی، به سوی ماموران امنیتی تیراندازی کرده است.<br>@<a href=\"https://t.me/VahidHeadline/299684\" target=\"_blank\" rel=\"noopener\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\">VahidHeadline</a><br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F93A1.png')\"><b>📡</b></i> <a href=\"https://t.me/VahidOnline\" target=\"_blank\">@VahidOnline</a>",
-    "date": "2026-05-25T05:55:23+00:00",
-    "images": [
-      "media/67ee262755d7328143bfe402f9848b51.jpg"
-    ],
-    "files": [],
-    "link": "https://t.me/VahidOnline/75694",
-    "timestamp": 1779688523000
-  },
-  {
-    "id": "SparrK_VPN/4306",
-    "channel": "SparrK_VPN",
-    "text": "CDN IPs :23.193.40.12623.193.40.11523.193.38.17623.193.38.18223.193.38.18023.193.41.15723.193.194.8923.193.236.81JOIN : @Sparrk_VPN ✅",
-    "html": "CDN IPs :<br><blockquote expandable=\"\"><code>23.193.40.126<br>23.193.40.115<br>23.193.38.176<br>23.193.38.182<br>23.193.38.180<br>23.193.41.157<br>23.193.194.89<br>23.193.236.81</code></blockquote><br><blockquote>JOIN : <a href=\"https://t.me/Sparrk_VPN\" target=\"_blank\">@Sparrk_VPN</a> <tg-emoji emoji-id=\"5199628545457923796\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji></blockquote>",
-    "date": "2026-05-25T04:53:36+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/SparrK_VPN/4306",
-    "timestamp": 1779684816000
-  },
-  {
-    "id": "SparrK_VPN/4305",
-    "channel": "SparrK_VPN",
-    "text": "CDN IPs : 50.7.5.8550.7.4.10750.7.4.24350.7.4.2442.23.168.75.160.13.852.16.19.1362.23.168.1742.23.168.2542.188.21.24092.123.106.1192.123.106.3392.123.106.4292.123.106.9063.141.252.203142.54.178.211185.200.232.42185.200.232.50JOIN : @Sparrk_VPN ✅",
-    "html": "CDN IPs : <br><blockquote expandable=\"\"><code>50.7.5.85<br>50.7.4.107<br>50.7.4.243<br>50.7.4.244<br>2.23.168.7<br>5.160.13.85<br>2.16.19.136<br>2.23.168.174<br>2.23.168.254<br>2.188.21.240<br>92.123.106.11<br>92.123.106.33<br>92.123.106.42<br>92.123.106.90<br>63.141.252.203<br>142.54.178.211<br>185.200.232.42<br>185.200.232.50</code><br></blockquote><blockquote>JOIN : <a href=\"https://t.me/Sparrk_VPN\" target=\"_blank\">@Sparrk_VPN</a> <tg-emoji emoji-id=\"5199628545457923796\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji></blockquote>",
-    "date": "2026-05-25T04:47:15+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/SparrK_VPN/4305",
-    "timestamp": 1779684435000
-  },
-  {
-    "id": "pm_afshaa/91426",
-    "channel": "pm_afshaa",
-    "text": "🔴یک مقام آمریکایی به شبکه «فاکس‌نیوز» گفت دونالد ترامپ، رئیس‌جمهوری آمریکا ممکن است به ایران هفت روز مهلت دهد تا به یک توافق «قابل‌قبول» برسن💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
-    "html": "<tg-emoji emoji-id=\"6044112265102235520\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i></tg-emoji>یک مقام آمریکایی به شبکه «فاکس‌نیوز» گفت دونالد ترامپ، رئیس‌جمهوری آمریکا ممکن است به ایران هفت روز مهلت دهد تا به یک توافق «قابل‌قبول» برسن<br><br><blockquote><tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> <a href=\"http://Rainbet.com/\" target=\"_blank\" rel=\"noopener\">Rainbet.com</a> the #1 Non-KYC Crypto Casino &amp; Sportsbook <a href=\"https://t.me/rainbetcom\" target=\"_blank\">@rainbetcom</a></blockquote><br><tg-emoji emoji-id=\"6021677967288050433\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9881.png')\"><b>😁</b></i></tg-emoji> <a href=\"https://t.me/Pm_Afshaa\" target=\"_blank\">@Pm_Afshaa</a>",
-    "date": "2026-05-25T04:46:17+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/pm_afshaa/91426",
-    "timestamp": 1779684377000
-  },
-  {
-    "id": "pm_afshaa/91425",
-    "channel": "pm_afshaa",
-    "text": "🔴قلهکی، فعال رسانه‌ای اصولگرا:  دلیل اینکه تفاهم اسلام آباد هنوز امضا نشده اینه که نتانیاهو زنگ زده به ترامپ و پُرش کرده، آمريکا هم زده زیرش و گفته تا قبل اینکه 400 کیلو اورانیوم رو تحویل ندید، خبری از پول‌های بلوکه شده نیست!  💧 Rainbet.com the #1 Non-KYC…🔴بر اساس گفته برخی منابع عبری و امریکایی نتانیاهو با ترامپ تماس گرفته و باعث بهم خوردن توافق با ایران شده💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom😁 @Pm_Afshaa",
-    "html": "<tg-emoji emoji-id=\"5314800906703740421\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i></tg-emoji>قلهکی، فعال رسانه‌ای اصولگرا:  دلیل اینکه تفاهم اسلام آباد هنوز امضا نشده اینه که نتانیاهو زنگ زده به ترامپ و پُرش کرده، آمريکا هم زده زیرش و گفته تا قبل اینکه 400 کیلو اورانیوم رو تحویل ندید، خبری از پول‌های بلوکه شده نیست!  <tg-emoji emoji-id=\"5997057187522812839\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92A7.png')\"><b>💧</b></i></tg-emoji> Rainbet.com the #1 Non-KYC…",
-    "date": "2026-05-25T04:45:35+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/pm_afshaa/91425",
-    "timestamp": 1779684335000
-  },
-  {
-    "id": "newscenter/63721",
-    "channel": "newscenter",
-    "text": "🔴 ادعای نیویورک‌تایمز: ایالات متحده و ایران به صورت کلی به توافقی رسیده‌اند🔻یک مقام آمریکایی روز یکشنبه گفت ایالات متحده و ایران به صورت کلی به توافقی رسیده‌اند که بر اساس آن تنگه هرمز بازگشایی خواهد شد. اما این اعلامیه پرسش‌های زیادی را بی‌پاسخ گذاشته است؛ از جمله اینکه عبور و مرور عادی کشتی‌ها از این تنگه چه زمانی از سر گرفته می‌شود و قیمت نفت چه وقت شروع به کاهش خواهد کرد. ✅ @newscenter",
-    "html": "<b><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i> ادعای نیویورک‌تایمز: ایالات متحده و ایران به صورت کلی به توافقی رسیده‌اند</b><br><br><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')\"><b>🔻</b></i>یک مقام آمریکایی روز یکشنبه گفت ایالات متحده و ایران به صورت کلی به توافقی رسیده‌اند که بر اساس آن تنگه هرمز بازگشایی خواهد شد. اما این اعلامیه پرسش‌های زیادی را بی‌پاسخ گذاشته است؛ از جمله اینکه عبور و مرور عادی کشتی‌ها از این تنگه چه زمانی از سر گرفته می‌شود و قیمت نفت چه وقت شروع به کاهش خواهد کرد. <br><br><tg-emoji emoji-id=\"4983335237971871543\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C85.png')\"><b>✅</b></i></tg-emoji> <a href=\"https://t.me/newscenter\" target=\"_blank\">@newscenter</a>",
-    "date": "2026-05-25T04:33:01+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/newscenter/63721",
-    "timestamp": 1779683581000
-  },
-  {
-    "id": "MatinSenPaii/3417",
-    "channel": "MatinSenPaii",
-    "text": "متاسفانه دید همه به dns، کلا dnstt و ساعتها اسکن بی‌نتیجه و دنبال ریزالور تمیز گشتن و سرعت دو سه کیلوبایتیه. نمیدونن که من با همین WhiteDNS به راحتی میرم اینستاگرام و یوتوب و تیک‌تاک و... چیزی که بهش دقت کردم، روی اینترنت‌های متفاوت نتیجه ممکنه زمین تا آسمون فرق کنه. در حدی که یکیش تلگرام به زور لود بشه، یکیش بشه به راحتی مثل قبل از دی‌ماه رفت اینستاگرام",
-    "html": "متاسفانه دید همه به dns، کلا dnstt و ساعتها اسکن بی‌نتیجه و دنبال ریزالور تمیز گشتن و سرعت دو سه کیلوبایتیه. نمیدونن که من با همین WhiteDNS به راحتی میرم اینستاگرام و یوتوب و تیک‌تاک و... <br><br>چیزی که بهش دقت کردم، روی اینترنت‌های متفاوت نتیجه ممکنه زمین تا آسمون فرق کنه. در حدی که یکیش تلگرام به زور لود بشه، یکیش بشه به راحتی مثل قبل از دی‌ماه رفت اینستاگرام",
-    "date": "2026-05-25T03:52:01+00:00",
-    "images": [],
-    "files": [],
-    "link": "https://t.me/MatinSenPaii/3417",
-    "timestamp": 1779681121000
   }
 ]
